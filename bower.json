@@ -1,0 +1,21 @@
+{
+  "name": "personas-pyxis",
+  "homepage": "https://github.com/eadpucv/personas-pyxis",
+  "authors": [
+    "Idar Gonzalez <idargonzalez@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "pyxis": "https://github.com/eadpucv/pyxis.git"
+  }
+}
