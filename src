@@ -21625,6 +21625,14 @@ footer {
 footer p {
   margin: 0;
 }
+.nav-tabs > li.active > a h5 {
+  color: #a84744;
+  font-weight: 400;
+}
+.nav-tabs > li > a h5 {
+  color: #c2c4ba;
+  font-weight: 300;
+}
 .modulo-login {
   margin: 60px auto 60px auto;
   padding-bottom: 40px;
