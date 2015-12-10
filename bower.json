@@ -16,6 +16,6 @@
     "tests"
   ],
   "dependencies": {
-    "pyxis": "https://github.com/eadpucv/pyxis.git"
+    "pyxis": "*"
   }
 }
