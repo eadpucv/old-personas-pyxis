@@ -3395,7 +3395,7 @@ footer #mapa img {
 */
 body {
   font-size: 16px;
-  background: url("../../bower_components/pyxis/img/ruido-fondo-pyxis.png") repeat center;
+  background: url("../img/ruido-fondo-pyxis.png") repeat center;
 }
 img.xs {
   width: 40%;
