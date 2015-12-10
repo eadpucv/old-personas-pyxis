@@ -21626,12 +21626,13 @@ footer p {
   margin: 0;
 }
 .modulo-login {
-  margin: 80px auto;
+  margin: 60px auto 60px auto;
+  padding-bottom: 40px;
   width: 100%;
 }
 .modulo-login .contenedor-modulo {
   margin: auto;
-  max-width: 620px;
+  max-width: 760px;
   padding: 15px 0;
 }
 .modulo-login hr {
@@ -21642,17 +21643,28 @@ footer p {
 .modulo-login .modulo-encabezado {
   display: inline-block;
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 .modulo-login .modulo-cuerpo label {
   text-align: right;
   display: inline-block;
   margin-right: 0;
 }
-.modulo-login .modulo-cuerpo .control {
+.modulo-login .modulo-cuerpo .checkbox label {
+  text-align: left;
+}
+.modulo-login .modulo-cuerpo .checkbox label span {
+  font-size: 13px;
+  display: inline;
+}
+.modulo-login .modulo-cuerpo .control,
+.modulo-login .modulo-cuerpo select {
   height: 45px;
   margin-bottom: 0;
   font-size: 20px;
+}
+.modulo-login .modulo-cuerpo select {
+  font-size: 17px;
 }
 .modulo-login .modulo-cuerpo .fila {
   margin-bottom: 20px;
@@ -21666,7 +21678,8 @@ footer p {
 .btn-bloque {
   width: 100%;
 }
-input:focus {
+input:focus,
+select:focus {
   box-shadow: 0 2px 0 rgba(236, 238, 230, 0.8) inset !important;
   background-color: rgba(255, 255, 255, 0.8) !important;
 }
