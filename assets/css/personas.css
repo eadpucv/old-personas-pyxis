@@ -1134,64 +1134,64 @@ th {
 }
 @font-face {
   font-family: 'Open Sans Condensed';
-  src: url('../fonts//open-sans-condensed/opensans-condlight-webfont.eot');
-  src: url('../fonts//open-sans-condensed/opensans-condlight-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts//open-sans-condensed/opensans-condlight-webfont.woff') format('woff'), url('../fonts//open-sans-condensed/opensans-condlight-webfont.woff2') format('woff2'), url('../fonts//open-sans-condensed/opensans-condlight-webfont.ttf') format('truetype'), url('../fonts//open-sans-condensed/opensans-condlight-webfont.svg#open_sanscondensed_light') format('svg');
+  src: url('../../bower_components/pyxis/fonts//open-sans-condensed/opensans-condlight-webfont.eot');
+  src: url('../../bower_components/pyxis/fonts//open-sans-condensed/opensans-condlight-webfont.eot?#iefix') format('embedded-opentype'), url('../../bower_components/pyxis/fonts//open-sans-condensed/opensans-condlight-webfont.woff') format('woff'), url('../../bower_components/pyxis/fonts//open-sans-condensed/opensans-condlight-webfont.woff2') format('woff2'), url('../../bower_components/pyxis/fonts//open-sans-condensed/opensans-condlight-webfont.ttf') format('truetype'), url('../../bower_components/pyxis/fonts//open-sans-condensed/opensans-condlight-webfont.svg#open_sanscondensed_light') format('svg');
   font-weight: 200;
   font-style: normal;
 }
 @font-face {
   font-family: 'Open Sans Condensed';
-  src: url('../fonts//open-sans-condensed/opensans-condlightitalic-webfont.eot');
-  src: url('../fonts//open-sans-condensed/opensans-condlightitalic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts//open-sans-condensed/opensans-condlightitalic-webfont.woff') format('woff'), url('../fonts//open-sans-condensed/opensans-condlightitalic-webfont.woff2') format('woff2'), url('../fonts//open-sans-condensed/opensans-condlightitalic-webfont.ttf') format('truetype'), url('../fonts//open-sans-condensed/opensans-condlightitalic-webfont.svg#open_sansCnLtIt') format('svg');
+  src: url('../../bower_components/pyxis/fonts//open-sans-condensed/opensans-condlightitalic-webfont.eot');
+  src: url('../../bower_components/pyxis/fonts//open-sans-condensed/opensans-condlightitalic-webfont.eot?#iefix') format('embedded-opentype'), url('../../bower_components/pyxis/fonts//open-sans-condensed/opensans-condlightitalic-webfont.woff') format('woff'), url('../../bower_components/pyxis/fonts//open-sans-condensed/opensans-condlightitalic-webfont.woff2') format('woff2'), url('../../bower_components/pyxis/fonts//open-sans-condensed/opensans-condlightitalic-webfont.ttf') format('truetype'), url('../../bower_components/pyxis/fonts//open-sans-condensed/opensans-condlightitalic-webfont.svg#open_sansCnLtIt') format('svg');
   font-weight: 200;
   font-style: italic;
 }
 @font-face {
   font-family: 'Open Sans Condensed';
-  src: url('../fonts//open-sans-condensed/opensans-condbold-webfont.eot');
-  src: url('../fonts//open-sans-condensed/opensans-condbold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts//open-sans-condensed/opensans-condbold-webfont.woff') format('woff'), url('../fonts//open-sans-condensed/opensans-condbold-webfont.woff2') format('woff2'), url('../fonts//open-sans-condensed/opensans-condbold-webfont.ttf') format('truetype'), url('../fonts//open-sans-condensed/opensans-condbold-webfont.svg#open_sans_condensedbold') format('svg');
+  src: url('../../bower_components/pyxis/fonts//open-sans-condensed/opensans-condbold-webfont.eot');
+  src: url('../../bower_components/pyxis/fonts//open-sans-condensed/opensans-condbold-webfont.eot?#iefix') format('embedded-opentype'), url('../../bower_components/pyxis/fonts//open-sans-condensed/opensans-condbold-webfont.woff') format('woff'), url('../../bower_components/pyxis/fonts//open-sans-condensed/opensans-condbold-webfont.woff2') format('woff2'), url('../../bower_components/pyxis/fonts//open-sans-condensed/opensans-condbold-webfont.ttf') format('truetype'), url('../../bower_components/pyxis/fonts//open-sans-condensed/opensans-condbold-webfont.svg#open_sans_condensedbold') format('svg');
   font-weight: 700;
   font-style: bold;
 }
 @font-face {
   font-family: 'Source Sans Pro';
-  src: url('../fonts//source-sans-pro/SourceSansPro-ExtraLight-webfont.eot');
-  src: url('../fonts//source-sans-pro/SourceSansPro-ExtraLight-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts//source-sans-pro/SourceSansPro-ExtraLight-webfont.woff') format('woff'), url('../fonts//source-sans-pro/SourceSansPro-ExtraLight-webfont.ttf') format('truetype'), url('../fonts//source-sans-pro/SourceSansPro-ExtraLight-webfont.svg#SourceSansProExtraLight') format('svg');
+  src: url('../../bower_components/pyxis/fonts//source-sans-pro/SourceSansPro-ExtraLight-webfont.eot');
+  src: url('../../bower_components/pyxis/fonts//source-sans-pro/SourceSansPro-ExtraLight-webfont.eot?#iefix') format('embedded-opentype'), url('../../bower_components/pyxis/fonts//source-sans-pro/SourceSansPro-ExtraLight-webfont.woff') format('woff'), url('../../bower_components/pyxis/fonts//source-sans-pro/SourceSansPro-ExtraLight-webfont.ttf') format('truetype'), url('../../bower_components/pyxis/fonts//source-sans-pro/SourceSansPro-ExtraLight-webfont.svg#SourceSansProExtraLight') format('svg');
   font-weight: 100;
   font-style: lighter;
 }
 @font-face {
   font-family: 'Source Sans Pro';
-  src: url('../fonts//source-sans-pro/SourceSansPro-Light-webfont.eot');
-  src: url('../fonts//source-sans-pro/SourceSansPro-Light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts//source-sans-pro/SourceSansPro-Light-webfont.woff') format('woff'), url('../fonts//source-sans-pro/SourceSansPro-Light-webfont.ttf') format('truetype'), url('../fonts//source-sans-pro/SourceSansPro-Light-webfont.svg#SourceSansProLight') format('svg');
+  src: url('../../bower_components/pyxis/fonts//source-sans-pro/SourceSansPro-Light-webfont.eot');
+  src: url('../../bower_components/pyxis/fonts//source-sans-pro/SourceSansPro-Light-webfont.eot?#iefix') format('embedded-opentype'), url('../../bower_components/pyxis/fonts//source-sans-pro/SourceSansPro-Light-webfont.woff') format('woff'), url('../../bower_components/pyxis/fonts//source-sans-pro/SourceSansPro-Light-webfont.ttf') format('truetype'), url('../../bower_components/pyxis/fonts//source-sans-pro/SourceSansPro-Light-webfont.svg#SourceSansProLight') format('svg');
   font-weight: 200;
   font-style: normal;
 }
 @font-face {
   font-family: 'Source Sans Pro';
-  src: url('../fonts//source-sans-pro/SourceSansPro-Regular-webfont.eot');
-  src: url('../fonts//source-sans-pro/SourceSansPro-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts//source-sans-pro/SourceSansPro-Regular-webfont.woff') format('woff'), url('../fonts//source-sans-pro/SourceSansPro-Regular-webfont.ttf') format('truetype'), url('../fonts//source-sans-pro/SourceSansPro-Regular-webfont.svg#SourceSansProRegular') format('svg');
+  src: url('../../bower_components/pyxis/fonts//source-sans-pro/SourceSansPro-Regular-webfont.eot');
+  src: url('../../bower_components/pyxis/fonts//source-sans-pro/SourceSansPro-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../../bower_components/pyxis/fonts//source-sans-pro/SourceSansPro-Regular-webfont.woff') format('woff'), url('../../bower_components/pyxis/fonts//source-sans-pro/SourceSansPro-Regular-webfont.ttf') format('truetype'), url('../../bower_components/pyxis/fonts//source-sans-pro/SourceSansPro-Regular-webfont.svg#SourceSansProRegular') format('svg');
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: 'Source Sans Pro';
-  src: url('../fonts//source-sans-pro/SourceSansPro-Semibold-webfont.eot');
-  src: url('../fonts//source-sans-pro/SourceSansPro-Semibold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts//source-sans-pro/SourceSansPro-Semibold-webfont.woff') format('woff'), url('../fonts//source-sans-pro/SourceSansPro-Semibold-webfont.ttf') format('truetype'), url('../fonts//source-sans-pro/SourceSansPro-Semibold-webfont.svg#SourceSansProSemibold') format('svg');
+  src: url('../../bower_components/pyxis/fonts//source-sans-pro/SourceSansPro-Semibold-webfont.eot');
+  src: url('../../bower_components/pyxis/fonts//source-sans-pro/SourceSansPro-Semibold-webfont.eot?#iefix') format('embedded-opentype'), url('../../bower_components/pyxis/fonts//source-sans-pro/SourceSansPro-Semibold-webfont.woff') format('woff'), url('../../bower_components/pyxis/fonts//source-sans-pro/SourceSansPro-Semibold-webfont.ttf') format('truetype'), url('../../bower_components/pyxis/fonts//source-sans-pro/SourceSansPro-Semibold-webfont.svg#SourceSansProSemibold') format('svg');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: 'Source Sans Pro';
-  src: url('../fonts//source-sans-pro/SourceSansPro-Bold-webfont.eot');
-  src: url('../fonts//source-sans-pro/SourceSansPro-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts//source-sans-pro/SourceSansPro-Bold-webfont.woff') format('woff'), url('../fonts//source-sans-pro/SourceSansPro-Bold-webfont.ttf') format('truetype'), url('../fonts//source-sans-pro/SourceSansPro-Bold-webfont.svg#SourceSansProBold') format('svg');
+  src: url('../../bower_components/pyxis/fonts//source-sans-pro/SourceSansPro-Bold-webfont.eot');
+  src: url('../../bower_components/pyxis/fonts//source-sans-pro/SourceSansPro-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../../bower_components/pyxis/fonts//source-sans-pro/SourceSansPro-Bold-webfont.woff') format('woff'), url('../../bower_components/pyxis/fonts//source-sans-pro/SourceSansPro-Bold-webfont.ttf') format('truetype'), url('../../bower_components/pyxis/fonts//source-sans-pro/SourceSansPro-Bold-webfont.svg#SourceSansProBold') format('svg');
   font-weight: 700;
   font-style: bold;
 }
 @font-face {
   font-family: 'Source Sans Pro';
-  src: url('../fonts//source-sans-pro/SourceSansPro-Black-webfont.eot');
-  src: url('../fonts//source-sans-pro/SourceSansPro-Black-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts//source-sans-pro/SourceSansPro-Black-webfont.woff') format('woff'), url('../fonts//source-sans-pro/SourceSansPro-Black-webfont.ttf') format('truetype'), url('../fonts//source-sans-pro/SourceSansPro-Black-webfont.svg#SourceSansProBlack') format('svg');
+  src: url('../../bower_components/pyxis/fonts//source-sans-pro/SourceSansPro-Black-webfont.eot');
+  src: url('../../bower_components/pyxis/fonts//source-sans-pro/SourceSansPro-Black-webfont.eot?#iefix') format('embedded-opentype'), url('../../bower_components/pyxis/fonts//source-sans-pro/SourceSansPro-Black-webfont.woff') format('woff'), url('../../bower_components/pyxis/fonts//source-sans-pro/SourceSansPro-Black-webfont.ttf') format('truetype'), url('../../bower_components/pyxis/fonts//source-sans-pro/SourceSansPro-Black-webfont.svg#SourceSansProBlack') format('svg');
   font-weight: 900;
   font-style: bolder;
 }
@@ -3308,7 +3308,7 @@ footer #mapa img {
 */
 body {
   font-size: 16px;
-  background: url("../img/ruido-fondo-pyxis.png") repeat center;
+  background: url("../../bower_components/pyxis/img/ruido-fondo-pyxis.png") repeat center;
 }
 img.xs {
   width: 40%;
@@ -21518,4 +21518,64 @@ td.nombre {
   .ficha-personal:nth-of-type(3n+4) {
     clear: both;
   }
+}
+html {
+  font-size: 100%;
+  position: relative;
+  min-height: 100%;
+}
+footer {
+  background-color: rgba(236, 238, 230, 0.8);
+  padding: 20px 0px;
+  height: 100px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2) inset;
+  font-size: 12px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+}
+footer p {
+  margin: 0;
+}
+.modulo-login {
+  margin: 80px auto;
+  width: 100%;
+}
+.modulo-login .contenedor-modulo {
+  margin: auto;
+  max-width: 620px;
+  padding: 15px 0;
+}
+.modulo-login hr {
+  padding-top: 25px;
+  box-shadow: none;
+  border-color: #c2c4ba;
+}
+.modulo-login .modulo-encabezado {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.modulo-login .modulo-cuerpo label {
+  text-align: right;
+  display: inline-block;
+  margin-right: 0;
+}
+.modulo-login .modulo-cuerpo .control {
+  height: 45px;
+  margin-bottom: 0;
+  font-size: 20px;
+}
+.modulo-login .modulo-cuerpo .fila {
+  margin-bottom: 20px;
+}
+.modulo-login .modulo-cuerpo .fila:last-child {
+  margin-bottom: 0;
+}
+.modulo-login .modulo-pie {
+  padding-bottom: 20px;
+}
+.btn-bloque {
+  width: 100%;
 }
