@@ -26,15 +26,26 @@ footer {
 	}
 }
 
+.nav-tabs > li.active > a h5 {
+    color: @rojo;
+    font-weight: 400;
+}
+
+.nav-tabs > li > a h5{
+    color: @gris-claro;
+    font-weight: 300;
+}
+
 .modulo-login {
 	
 	// border:1px solid blue;
-	margin: 80px auto;
+	margin: 60px auto 60px auto;
+	padding-bottom: 40px;
 	width: 100%;
 
 	.contenedor-modulo {
 		margin: auto;
-		max-width: 620px;
+		max-width: 760px;
 		padding: 15px 0;
 	}
 	hr {
@@ -46,7 +57,7 @@ footer {
 		// border:1px solid blue;
 		display: inline-block;
 		width: 100%;
-		margin-bottom: 40px;
+		margin-bottom: 10px;
 	}
 	.modulo-cuerpo {
 		label {
@@ -54,10 +65,20 @@ footer {
 			display: inline-block;
 			margin-right: 0;
 		}
-		.control {
+		.checkbox label {
+			text-align: left;
+			span {
+				font-size: 13px;
+				display: inline;
+			}
+		}
+		.control, select {
 			height: 45px;
 			margin-bottom: 0;
 			font-size: 20px;
+		}
+		select {
+			font-size: 17px;
 		}
 		.fila {
 			margin-bottom: 20px;
@@ -73,18 +94,53 @@ footer {
 	}
 }
 
+.modulo-portal {
+	border:1px solid red;
+	background-image: url('http://personas.ead.pucv.cl/images/estorninos.jpg?1373303231') no-repeat center center fixed; 
+}
+
 // Pasar esto a Pyxis:
 .btn-bloque {
 	width: 100%;
 }
 
-input {
+input, select {
 	&:focus {
 		box-shadow: 0 2px 0 @gris-auxiliar inset !important;
 		background-color: rgba(255, 255, 255, 0.8) !important;
 	}
 }
 
+.grupo-inputs {
+	display: inline-table;
+	vertical-align: middle;
+	width: 100%;
+	.input {
+		background-color: @gris-auxiliar;
+		top: 0;
+		border-right: none;
+		right: 0;
+		white-space: nowrap;
+		vertical-align: middle;
+		display: table-cell;
+		// padding: 0 14.4px;
+		text-align: center;
+		.icn {
+			display: inline;
+			line-height: 1.27em;
+		}
+	}
+	input, select {
+		float: left;
+		left: -2px;
+		width: 100% !important;
+		display: table-cell;
+		// border-left: none;
+	}
+	select {
+		margin-left: 0 !important;
+	}
+}
 
 
 
