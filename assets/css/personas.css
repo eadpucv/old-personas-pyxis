@@ -21596,6 +21596,10 @@ footer p {
 .modulo-login .modulo-pie {
   padding-bottom: 20px;
 }
+.modulo-portal {
+  border: 1px solid red;
+  background-image: url('http://personas.ead.pucv.cl/images/estorninos.jpg?1373303231') no-repeat center center fixed;
+}
 .btn-bloque {
   width: 100%;
 }
@@ -21603,4 +21607,33 @@ input:focus,
 select:focus {
   box-shadow: 0 2px 0 rgba(236, 238, 230, 0.8) inset !important;
   background-color: rgba(255, 255, 255, 0.8) !important;
+}
+.grupo-inputs {
+  display: inline-table;
+  vertical-align: middle;
+  width: 100%;
+}
+.grupo-inputs .input {
+  background-color: rgba(236, 238, 230, 0.8);
+  top: 0;
+  border-right: none;
+  right: 0;
+  white-space: nowrap;
+  vertical-align: middle;
+  display: table-cell;
+  text-align: center;
+}
+.grupo-inputs .input .icn {
+  display: inline;
+  line-height: 1.27em;
+}
+.grupo-inputs input,
+.grupo-inputs select {
+  float: left;
+  left: -2px;
+  width: 100% !important;
+  display: table-cell;
+}
+.grupo-inputs select {
+  margin-left: 0 !important;
 }

@@ -94,6 +94,11 @@ footer {
 	}
 }
 
+.modulo-portal {
+	border:1px solid red;
+	background-image: url('http://personas.ead.pucv.cl/images/estorninos.jpg?1373303231') no-repeat center center fixed; 
+}
+
 // Pasar esto a Pyxis:
 .btn-bloque {
 	width: 100%;
@@ -106,6 +111,36 @@ input, select {
 	}
 }
 
+.grupo-inputs {
+	display: inline-table;
+	vertical-align: middle;
+	width: 100%;
+	.input {
+		background-color: @gris-auxiliar;
+		top: 0;
+		border-right: none;
+		right: 0;
+		white-space: nowrap;
+		vertical-align: middle;
+		display: table-cell;
+		// padding: 0 14.4px;
+		text-align: center;
+		.icn {
+			display: inline;
+			line-height: 1.27em;
+		}
+	}
+	input, select {
+		float: left;
+		left: -2px;
+		width: 100% !important;
+		display: table-cell;
+		// border-left: none;
+	}
+	select {
+		margin-left: 0 !important;
+	}
+}
 
 
 
