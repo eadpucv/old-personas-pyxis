@@ -8,10 +8,38 @@
     <script src="../bower_components/pyxis/js/transition.js"></script>
     <script src="../bower_components/pyxis/js/modal.js"></script>
     <script src="../bower_components/pyxis/js/tab.js"></script>
+    <script src="../bower_components/pyxis/js/dropdown.js"></script>
 </head>
 <body>
+	<div class="fondo-header-pyxis">
+		<div class="pag sin-relleno menu">
+			<nav class='menu-pyxis'>
+			  <a href='personas.html'>
+			    <div class='logo-pyxis'>
+			        <img src='../assets/img/estornino-2.png'>
+			        <h6 class='gruesa sans rojo no-responsivo'>
+			          Personas<span class='fino gris-oscuro sans'>e[ad]</span>
+			        </h6>
+			    </div>
+			  </a>
+			  <ul class='nav-rotulos nav nav-pills'>
+			    <li><a href='#'><i class="icn icn-usuario"></i> Mi perfil</a></li>
+			    <li><a href='editar.html'><i class="icn icn-lapiz"></i> Editar cuenta</a></li>
+			    <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" id="drop4" class="dropdown-toggle"><i class="icn icn-engranaje"></i> Administración<i class="icn icn-caronabajo "></i></a>
+				    <ul aria-labelledby="drop4" role="menu" class="dropdown-menu" id="menu1">
+				      <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Buscar Usuarios e[ad]</a></li>
+				      <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Usuarios Bloqueados</a></li>
+				      <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Filtrar</a></li>
+				      <li role="presentation"><a href="registro.html" tabindex="-1" role="menuitem">Nuevo usuario</a></li>
+				    </ul>
+				  </li>
+			    <li><a href='ingresar.html'><i class="icn icn-salir"></i> Cerrar sesión</a></li>
+			  </ul>
+			</nav> 	
+		</div>
+	</div>  
 	<section class="modulo-portal">
-		<h1>Personas</h1>
+		<img src="../assets/img/estorninos.jpg" alt="">
 	</section>
 	<footer>
 		<p class="centrado xs"><b>Personas</b> es un sistema de registro único (SSO) desarrollado por el <a href="#">.:TIG:.</a> para todos los servicios de la <a href="#">e[ad] Escuela de Arquitectura y Diseño PUCV</a>. </p>

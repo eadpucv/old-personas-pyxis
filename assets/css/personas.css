@@ -21597,8 +21597,19 @@ footer p {
   padding-bottom: 20px;
 }
 .modulo-portal {
-  border: 1px solid red;
-  background-image: url('http://personas.ead.pucv.cl/images/estorninos.jpg?1373303231') no-repeat center center fixed;
+  background-color: #fff;
+  min-height: 80vh;
+  display: -webkit-flex;
+  display: flex;
+}
+.modulo-portal h1 {
+  margin: auto;
+}
+.modulo-portal img {
+  margin: auto;
+}
+.dropdown-menu {
+  top: 101%;
 }
 .btn-bloque {
   width: 100%;
