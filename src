@@ -21706,6 +21706,10 @@ select:focus {
   box-shadow: 0 2px 0 rgba(236, 238, 230, 0.8) inset !important;
   background-color: rgba(255, 255, 255, 0.8) !important;
 }
+.checkbox.bloque {
+  display: block;
+  width: 100%;
+}
 .grupo-inputs {
   display: inline-table;
   vertical-align: middle;
@@ -21720,10 +21724,12 @@ select:focus {
   vertical-align: middle;
   display: table-cell;
   text-align: center;
+  padding: 0;
+  margin: 0;
 }
 .grupo-inputs .input .icn {
   display: inline;
-  line-height: 1.27em;
+  line-height: 1.20em;
 }
 .grupo-inputs input,
 .grupo-inputs select {
@@ -21734,4 +21740,29 @@ select:focus {
 }
 .grupo-inputs select {
   margin-left: 0 !important;
+}
+.tabla-personas {
+  border-collapse: separate;
+  width: 100%;
+  margin-bottom: 80px;
+}
+.tabla-personas thead tr {
+  border-bottom: 1px solid blue;
+}
+.tabla-personas thead th {
+  text-align: left;
+  font-family: 'Source Sans Pro' !important;
+  color: #a84744;
+  font-weight: 700;
+  padding: 4.8px;
+}
+.tabla-personas tbody tr:hover {
+  background-color: rgba(236, 238, 230, 0.8);
+  cursor: pointer;
+}
+.tabla-personas tbody td {
+  font-size: 14px;
+}
+.tabla-personas tbody td a {
+  margin-right: 5px;
 }
