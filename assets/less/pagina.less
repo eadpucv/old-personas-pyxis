@@ -121,6 +121,11 @@ input, select {
 	}
 }
 
+.checkbox.bloque{
+	display: block;
+	width: 100%;
+}
+
 .grupo-inputs {
 	display: inline-table;
 	vertical-align: middle;
@@ -135,9 +140,13 @@ input, select {
 		display: table-cell;
 		// padding: 0 14.4px;
 		text-align: center;
+		// Prueba
+		padding: 0;
+		margin: 0;
+		// Fin prueba
 		.icn {
 			display: inline;
-			line-height: 1.27em;
+			line-height: 1.20em;
 		}
 	}
 	input, select {
@@ -152,7 +161,37 @@ input, select {
 	}
 }
 
+// Tabla
 
+.tabla-personas {
+	border-collapse: separate;
+	width: 100%;
+	margin-bottom: 80px;
+	thead {
+		tr{
+			border-bottom: 1px solid blue;
+		}
+		th {
+			text-align: left;
+			.sans;
+			color: @rojo;
+			.grueso;
+			padding: 4.8px;
+		}
+	}
+	tbody {
+		tr:hover {
+			background-color: @gris-auxiliar;
+			cursor: pointer;
+		}
+		td {
+			font-size: 14px;
+			a {
+				margin-right: 5px;
+			}
+		}
+	}
+}
 
 
 // Rutas
