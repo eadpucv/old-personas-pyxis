@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Personas e[ad] - Administración</title>
+	<link rel="stylesheet" type="text/css" href="../assets/css/personas.css">
+	<script src="../bower_components/pyxis/js/jquery.js"></script>
+    <script src="../bower_components/pyxis/js/transition.js"></script>
+    <script src="../bower_components/pyxis/js/modal.js"></script>
+    <script src="../bower_components/pyxis/js/tab.js"></script>
+    <script src="../bower_components/pyxis/js/dropdown.js"></script>
+</head>
+<body>
+	<div class="fondo-header-pyxis">
+		<div class="pag sin-relleno menu">
+			<nav class='menu-pyxis'>
+			  <a href='personas.html'>
+			    <div class='logo-pyxis'>
+			        <img src='../assets/img/estornino-2.png'>
+			        <h6 class='gruesa sans rojo no-responsivo'>
+			          Personas<span class='fino gris-oscuro sans'>e[ad]</span>
+			        </h6>
+			    </div>
+			  </a>
+			  <ul class='nav-rotulos nav nav-pills'>
+			    <li><a href='#'><i class="icn icn-usuario"></i> Mi perfil</a></li>
+			    <li><a href='editar.html'><i class="icn icn-lapiz"></i> Editar cuenta</a></li>
+			    <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" id="drop4" class="dropdown-toggle"><i class="icn icn-engranaje"></i> Administración<i class="icn icn-caronabajo "></i></a>
+				    <ul aria-labelledby="drop4" role="menu" class="dropdown-menu" id="menu1">
+				      <li role="presentation"><a href="administracion.html#usuarios" tabindex="-1" role="menuitem"><i class="icn icn-lupa"></i> Buscar Usuarios e[ad]</a></li>
+				      <li role="presentation"><a href="administracion.html#bloqueados" tabindex="-1" role="menuitem"><i class="icn icn-prohibir"></i> Usuarios Bloqueados</a></li>
+				      <li role="presentation"><a href="administracion.html#filtrar" tabindex="-1" role="menuitem"><i class="icn icn-rama"></i> Filtrar</a></li>
+				      <li role="presentation"><a href="registro.html" tabindex="-1" role="menuitem"><i class="icn icn-usuariomas"></i> Nuevo usuario</a></li>
+				    </ul>
+				  </li>
+			    <li><a href='ingresar.html'><i class="icn icn-salir"></i> Cerrar sesión</a></li>
+			  </ul>
+			</nav> 	
+		</div>
+	</div> 
+	<section class="modulo-login">
+		<div class="modulo-cuerpo">
+			<div class="fondo-blanco margen-inf-sm">
+				<div class="contenedor-modulo">
+					<i class="icn icn-engranaje rojo margen-der-sm"></i> 
+					<ul class="nav nav-tabs" role="tablist" id="tabla-contenido">
+	                    <li class="active"><a id='subiendo-1' href="#buscar-usuarios" role="tab" data-toggle="tab"><h5 class="rojo sin-margen">Usuarios e[ad]</h5></a></li>
+	                    <li><a id='subiendo-2' href="#bloqueados" role="tab" data-toggle="tab"><h5 class="rojo sin-margen">Usuarios bloqueados</h5></a></li>
+	                    <li><a id='subiendo-3' href="#filtrar" role="tab" data-toggle="tab"><h5 class="rojo sin-margen">Filtrar</h5></a></li>
+	                </ul>
+				</div>
+			</div>
+			<div class="contenedor-modulo">
+				<div class="tab-content margen-sup">
+		            <div class="tab-pane fade in active" id="buscar-usuarios">
+		            	<div class="fila">
+		            		<div class="col-md-5">
+		            			<input type="text" placeholder="Buscar por nombre o correo electrónico"> 
+		            		</div>
+		            		<div class="col-md-1">
+		            			<i class="icn icn-lupa"></i> |
+		            		</div>
+		            		<div class="col-md-6">
+		            			<a href="registro.html">Crear nuevo usuario</a>
+		            		</div>
+						</div>
+						<table class="tabla-personas">
+							<thead>
+								<tr>
+									<th>Usuario</th><th>Nombre</th><th>Apellido</th><th>Correo electrónico</th><th>Tipo</th><th>Acciones</th>		
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>aalfarop</td><td>Arlett Sarhay</td><td>Alfaro Pacheco</td><td>lord_of88@yahoo.com</td><td>Alumno</td><td><a href="#"><i class="icn icn-prohibir"></i></a> <a href="#"><i class="icn icn-acto"></i></a> <a href="#"><i class="icn icn-mas"></i></a> <input type="checkbox"> </td>
+								</tr>
+								<tr>
+									<td>aalfarop</td><td>Arlett Sarhay</td><td>Alfaro Pacheco</td><td>lord_of88@yahoo.com</td><td>Alumno</td><td><a href="#"><i class="icn icn-prohibir"></i></a> <a href="#"><i class="icn icn-acto"></i></a> <a href="#"><i class="icn icn-mas"></i></a> <input type="checkbox"> </td>
+								</tr>
+								<tr>
+									<td>aalfarop</td><td>Arlett Sarhay</td><td>Alfaro Pacheco</td><td>lord_of88@yahoo.com</td><td>Alumno</td><td><a href="#"><i class="icn icn-prohibir"></i></a> <a href="#"><i class="icn icn-acto"></i></a> <a href="#"><i class="icn icn-mas"></i></a> <input type="checkbox"> </td>
+								</tr>
+							</tbody>
+						</table>
+		            </div>
+		            <div class="tab-pane fade in " id="bloqueados">
+		            	<table class="tabla-personas">
+							<thead>
+								<tr>
+									<th>Usuario</th><th>Nombre</th><th>Apellido</th><th>Correo electrónico</th><th>Tipo</th><th>Acciones</th>		
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>aalfarop</td><td>Arlett Sarhay</td><td>Alfaro Pacheco</td><td>lord_of88@yahoo.com</td><td>Alumno</td><td><a href="#"><i class="icn icn-visto"></i></a> <a href="#"><i class="icn icn-equis"></i></a> </a> <input type="checkbox"> </td>
+								</tr>
+								<tr>
+									<td>aalfarop</td><td>Arlett Sarhay</td><td>Alfaro Pacheco</td><td>lord_of88@yahoo.com</td><td>Alumno</td><td><a href="#"><i class="icn icn-visto"></i></a> <a href="#"><i class="icn icn-equis"></i></a> </a> <input type="checkbox"> </td>
+								</tr>
+								<tr>
+									<td>aalfarop</td><td>Arlett Sarhay</td><td>Alfaro Pacheco</td><td>lord_of88@yahoo.com</td><td>Alumno</td><td><a href="#"><i class="icn icn-visto"></i></a> <a href="#"><i class="icn icn-equis"></i></a> </a> <input type="checkbox"> </td>
+								</tr>
+							</tbody>
+						</table>
+		            </div>
+		            <div class="tab-pane fade in " id="filtrar">
+		            	<h5 class="sans rojo">Creador de Lista de Correos e[ad]</h5>
+		            	<div class="fila flexbox">
+							<div class="col-md-4 container-flex">
+								<label class="derecha flex-centrar" for="type">Tipo</label>
+							</div>
+							<div class="col-md-8 container-flex">
+								<div class="checkbox bloque">
+									<label>
+										<input type="checkbox"> Alumno
+									</label>
+								</div>
+								<div class="checkbox bloque">
+									<label>
+										<input type="checkbox"> Ex-Alumno
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="fila flexbox">
+							<div class="col-md-4 container-flex">
+								<label class="derecha flex-centrar" for="course">Carrera</label>
+							</div>
+							<div class="col-md-8 container-flex">
+								<div class="checkbox bloque">
+									<label>
+										<input type="checkbox"> Arquitectura
+									</label>
+								</div>
+								<div class="checkbox bloque">
+									<label>
+										<input type="checkbox"> Diseño
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="fila flexbox">
+							<div class="col-md-4 container-flex">
+								<label class="derecha flex-centrar" for="course">Año ingreso desde</label>
+							</div>
+							<div class="col-md-8 container-flex">
+								<div class="grupo-inputs">
+							        <div class="input"><i class="icn icn-md icn-ingresar"></i></div>
+							        <select name="course">
+										<option selected="selected" value="1972">1972</option>
+										<option value="1973">1973</option>
+										<option value="1974">1974</option>
+										<option value="1975">1975</option>
+										<option value="1976">1976</option>
+										<option value="1977">1977</option>
+										<option value="1978">1978</option>
+										<option value="1979">1979</option>
+										<option value="1980">1980</option>
+										<option value="1981">1981</option>
+										<option value="1982">1982</option>
+										<option value="1983">1983</option>
+										<option value="1984">1984</option>
+										<option value="1985">1985</option>
+										<option value="1986">1986</option>
+										<option value="1987">1987</option>
+										<option value="1988">1988</option>
+										<option value="1989">1989</option>
+										<option value="1990">1990</option>
+										<option value="1991">1991</option>
+										<option value="1992">1992</option>
+										<option value="1993">1993</option>
+										<option value="1994">1994</option>
+										<option value="1995">1995</option>
+										<option value="1996">1996</option>
+										<option value="1997">1997</option>
+										<option value="1998">1998</option>
+										<option value="1999">1999</option>
+										<option value="2000">2000</option>
+										<option value="2001">2001</option>
+										<option value="2002">2002</option>
+										<option value="2003">2003</option>
+										<option value="2004">2004</option>
+										<option value="2005">2005</option>
+										<option value="2006">2006</option>
+										<option value="2007">2007</option>
+										<option value="2008">2008</option>
+										<option value="2009">2009</option>
+										<option value="2010">2010</option>
+										<option value="2011">2011</option>
+										<option value="2012">2012</option>
+										<option value="2013">2013</option>
+										<option value="2014">2014</option>
+										<option value="2015">2015</option>
+								    </select>
+							    </div>
+							</div>
+						</div>
+						<div class="fila flexbox">
+							<div class="col-md-4 container-flex">
+								<label class="derecha flex-centrar" for="course">Hasta</label>
+							</div>
+							<div class="col-md-8 container-flex">
+								<div class="grupo-inputs">
+							        <div class="input"><i class="icn icn-md icn-salir"></i></div>
+							        <select name="course">
+										<option selected="selected" value="1973">1973</option>
+										<option value="1974">1974</option>
+										<option value="1975">1975</option>
+										<option value="1976">1976</option>
+										<option value="1977">1977</option>
+										<option value="1978">1978</option>
+										<option value="1979">1979</option>
+										<option value="1980">1980</option>
+										<option value="1981">1981</option>
+										<option value="1982">1982</option>
+										<option value="1983">1983</option>
+										<option value="1984">1984</option>
+										<option value="1985">1985</option>
+										<option value="1986">1986</option>
+										<option value="1987">1987</option>
+										<option value="1988">1988</option>
+										<option value="1989">1989</option>
+										<option value="1990">1990</option>
+										<option value="1991">1991</option>
+										<option value="1992">1992</option>
+										<option value="1993">1993</option>
+										<option value="1994">1994</option>
+										<option value="1995">1995</option>
+										<option value="1996">1996</option>
+										<option value="1997">1997</option>
+										<option value="1998">1998</option>
+										<option value="1999">1999</option>
+										<option value="2000">2000</option>
+										<option value="2001">2001</option>
+										<option value="2002">2002</option>
+										<option value="2003">2003</option>
+										<option value="2004">2004</option>
+										<option value="2005">2005</option>
+										<option value="2006">2006</option>
+										<option value="2007">2007</option>
+										<option value="2008">2008</option>
+										<option value="2009">2009</option>
+										<option value="2010">2010</option>
+										<option value="2011">2011</option>
+										<option value="2012">2012</option>
+										<option value="2013">2013</option>
+										<option value="2014">2014</option>
+										<option value="2015">2015</option>
+								    </select>
+							    </div>
+							</div>
+						</div>
+						<div class="fila flexbox">
+							<div class="col-md-4 container-flex">
+								<label class="derecha flex-centrar" for="liststyle">Tipo de lista</label>
+							</div>
+							<div class="col-md-8 container-flex">
+								<div class="checkbox">
+									<label>
+										<input type="radio" name="listtype"> Lista de correo
+										<input type="radio" name="listtype"> Surveymonkey
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="fila">
+							<div class="col-md-8 col-md-offset-4">
+								<button type="button" class="btn btn-accion btn-md btn-bloque">Consultar</button>
+							</div>
+						</div>
+						<!-- Resultados -->
+						<div class="fila">
+							<div class="col-md-4">
+								<h6 class="altas rojo"><b>106</b> usuarios encontrados:</h6>
+							</div>
+							<div class="col-md-8">
+								<textarea name="emailList" id="emailList" rows="5" readonly>"Pablo Esteban Hormazábal Anavalón"<pablohza@gmail.com>,"Diego Felipe Millán González"<diegomillangonzalez@gmail.com>,"jean araya"<jarayagladinier@gmail.com>,"Caroline Reed"<caro.reed@gmail.com>,"Nicolás Espinoza"<nicolasespinoza@arquitecturaucv.cl>,"Gail Mac-kay"<titimackay@arquitecturaucv.cl>,"Luis Romanque Albornoz"<luis.romanque@arquitecturaucv.cl>,"Javiera González Cancino"<javieragonzal@gmail.com>,"Esteban Saavedra"<esteban.saaveni@gmail.com>,"Felipe Cardemil"<fcardemil.o@gmail.com>,"Manuel Zamora"<medular@gmail.com>,"Sebastian Barrera"<sbarrera@valpo.cl>,"Rodrigo Vera"<rodrigo.vera.a@gmail.com>,"Daniel maceiras"<maceirasbravo@gmail.com>,"hermann rosenthal"<dreammann@hotmail.com>,"David Henríquez"<dvdnrks@gmail.com>,"Marcelo Ruiz"<marceloruiz.fernandez@gmail.com>,"Dintrans Holmes Rene"<dintransran@yahoo.com>,"Rocío Herrera Ponce de León"<rocioherrera@arquitecturaucv.cl>,"Pamela Gonzalez"<pgonzalez@arquitecturaucv.cl>,"Alejandra Corral"<acorral@arquitecturaucv.cl>,"Alfonso Ovalle"<alfonso2@gmail.com>,"Pablo Esteban"<phormazabal@arquitecturaucv.cl>,"Pablo Hormazábal"<phormazabal@gmail.com>,"Marcelo Antonio Velásquez Vásquez"<marcelo.velasquez.v@gmail.com>,"Estefanía Trisotti"<estefaniatrisotti@gmail.com>,"Daisy Vera"<daisy.vm@gmail.com>,"Damari Vergara"<damarivergara@gmail.com>,"Evelyne Ramirez"<jovita_05@hotmail.com>,"Eileen Morrison"<eileenarq@yahoo.com>,"Sofia Savoy"<sofiasavoy.a@gmail.com>,"Valeria Valenzuela"<v.valenzuela@arquitecturaucv.cl>,"Pedro Garretón"<pgarreton@arquitecturaucv.cl>,"Victoria Jolly"<jollyvic@gmail.com>,"Patricio Berroeta"<pberroeta@gmail.com>,"felipe reyes"<felipe.reyes.a@gmail.com>,"Basilio Cáceres"<basilio.caceres@gmail.com>,"Nicolas Venturelli"<nicoventurelli@hotmail.com>,"claudio astorga"<claudio_astorga@mahe.cl>,"Gabriel Abarca"<gabriel.abarca.u@gmail.com>,"Egidio Jeria"<konegidio@gmail.com>,"leonardo aravena"<aravena.leo@gmail.com>,"Fernando Miranda"<fenomiranda@gmail.com>,"Juan Vasquez Palau"<juan@ere.cl>,"hernan serrano"<diseno@capehornmarine.com>,"Ursula Exss Cid"<uexss@arquitecturaucv.cl>,"Glenda Monforte"<monfortek@yahoo.es>,"Claudia Puchi"<clau.puchi@gmail.com>,"gonzalo rodriguez"<gonzalorg@gmail.com>,"Luis Saavedra"<contacto@altairfilms.cl>,"Camila Vargas"<cvargasthiermann@gmail.com>,"allan garviso"<agarviso@en-mente.cl>,"Juan Antonio Godoy Berner"<godoyjuanantonio@gmail.com>,"Juan Alejandro Contreras"<jalejandro_85@hotmail.com>,"Javiera Fernandez"<jfernandezallendes@gmail.com>,"Pablo Patricio Ivan Martinez Duarte"<contacto@pablomartinezduarte.cl>,"LUIS ALVAREZ"<alvar_ez@hotmail.com>,"Rubén del Rio"<rubendelrio@gmail.com>,"Manuel Antonio Rossel Echague"<marossel@gmail.com>,"ANIBAL RAMOS"<anibal.ramos.e@gmail.com>,"Juan Carlos"<localghost@hotmail.es>,"Francisco Ibañez"<fcoibanezp@gmail.com>,"Camilo Mascaró"<camilo@donosomascaro.cl>,"Rosario Meneses"<rosario.meneses@gmail.com>,"valeria diaz"<valeriadiazorrego@gmail.com>,"René Olivares"<rolivares_v@hotmail.com>,"antonia scarella"<antoniascarella@gmail.com>,"leslie krebs"<lesliekres@gmail.com>,"Monserrat Mancilla Pazo"<monsewhat@gmail.com>,"Victoria Jolly"<Victoria Jolly >,"Jean Petitpas"<contacto@raisaje.com>,"andrea delaveau"<adelaveau@minvu.cl>,"Felipe Gaymor"<felipe.gaymor.Arq@gmail.com>,"Jacob Nicolas Bahamondes"<j.bahamondes@hotmail.com>,"FELIPE SANHUEZA"<fsw156@hotmail.com>,"Jacqueline Puelpan Aranguiz"<kellytapuelpan@gmail.com>,"Manuela Donoso"<mdonoso@gmail.com>,"Daniela Jiménez"<dani.jimenez.s@gmail.com>,"Vaquita Loquita"<vacaaalocaaa@hotmail.com>,"Pablo Baratta"<baratta.pablo@gmail.com>,"Amarí Peliowski"<amari_pe@yahoo.com>,"Mario Antonio Zamorano Inostroza"<mariozamorano.inostroza@gmail.com>,"Carlos Alberto Silva Zaldívar"<carlossilvaarquitecto@gmail.com>,"Alvaro Vinagre"<alvaro.vinagre@gmail.com>,"Pedro Palma Casanova"<ppalmacasanova@gmail.com>,"David Maldonado"<davidmaldonadot@gmail.com>,"Estefania Alejandra Suárez Squadritto "<nia.suarez@gmail.com>,"catalina bodelon"<catabodelon@hotmail.com>,"Luis Eduardo Saavedra Apablaza"<contacto@antaresrender.cl>,"CLAUDIA JAIMALIS"<cjaimalisg@gmail.com>,"raul besoain"<raulantoniobesoain@gmail.com>,"Claudia Campos Rivas"<clau.acr@gmail.com>,"Francisco Weber Weber"<fcoweb23@gmail.com>,"Mabel Alarcón "<mabelmar19@gmail.com>,"tiffany koppmann"<tiffany@koppmann.cl>,"Adeline de Smet d'Olbecke"<adelinedesmet@gmail.com>,"Ximena SIlva"<xsilva@xdiseno.cl>,"Mauricio Rodríguez"<proartchile@hotmail.com>,"Guillermo Olivares"<olivaresg@taett.com>,"Cristian Alegria"<cristian.alegria@gmail.com>,"Andres Ortega"<andres@estudioracimo.org>,"ALEXIS RAMIREZ"<alealexis@gmail.com>,"Humberto Carmona"<gloriaestelari@gmail.com>,"marcela soto"<marcesot@gmail.com>,"Aitor Ochoa Argany"<ochoaargany@gmail.com>,"Javier Soto"<jsotom@gmail.com>,
+								</textarea>
+							</div>
+						</div>
+		            </div>
+		        </div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<p class="centrado xs"><b>Personas</b> es un sistema de registro único (SSO) desarrollado por el <a href="#">.:TIG:.</a> para todos los servicios de la <a href="#">e[ad] Escuela de Arquitectura y Diseño PUCV</a>. </p>
+	</footer>
+	<script>
+	// Abre tab según href anterior
+		$(function(){
+	  		var hash = window.location.hash;
+	  		hash && $('ul.nav a[href="' + hash + '"]').tab('show');
+
+		  $('.nav-tabs a').click(function (e) {
+		    $(this).tab('show');
+		    var scrollmem = $('body').scrollTop();
+		    window.location.hash = this.hash;
+		    $('html,body').scrollTop(scrollmem);
+		  });
+		});
+	</script>
+</body>
+</html>
