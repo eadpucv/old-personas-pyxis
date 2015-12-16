@@ -51,144 +51,135 @@
 			<div class="contenedor-modulo">
 				<div class="tab-content margen-sup">
 		            <div class="tab-pane fade in active" id="editar-cuenta">
-		            	<div class="fila">
-							<div class="col-md-6">
-								<div class="fila flexbox">
-									<div class="col-md-4 container-flex">
-										<label class="flex-centrar" for="name">Nombre</label>
+		            	<form>
+			            	<div class="fila">
+								<div class="col-md-6">
+									<div class="fila flexbox">
+										<div class="col-md-4 container-flex">
+											<label class="flex-centrar" for="name">Nombre</label>
+										</div>
+										<div class="col-md-8 container-flex">
+											<div class="grupo-inputs">
+										        <div class="input"><i class="icn icn-md icn-perfil"></i></div>
+										        <input type="text" class="control" id="name" />	
+										    </div>
+										</div>
 									</div>
-									<div class="col-md-8 container-flex">
-										<div class="grupo-inputs">
-									        <div class="input"><i class="icn icn-md icn-perfil"></i></div>
-									        <input type="text" class="control" id="name" />	
-									    </div>
+									<div class="fila flexbox">
+										<div class="col-md-4 container-flex">
+											<label class="derecha flex-centrar" for="lastname">Apellidos</label>
+										</div>
+										<div class="col-md-8 container-flex">
+											<div class="grupo-inputs">
+										        <div class="input"><i class="icn icn-md icn-perfil"></i></div>
+										        <input type="text" class="control" id="lastname" />	
+										    </div>
+										</div>
 									</div>
-								</div>
-								<div class="fila flexbox">
-									<div class="col-md-4 container-flex">
-										<label class="derecha flex-centrar" for="lastname">Apellidos</label>
+									<div class="fila flexbox">
+										<div class="col-md-4 container-flex">
+											<label class="derecha flex-centrar" for="usertype">Tipo de usuario</label>
+										</div>
+										<div class="col-md-8 container-flex">
+											<div class="grupo-inputs">
+										        <div class="input"><i class="icn icn-md icn-engranaje"></i></div>
+										        <select name="usertype">
+													<option></option>
+											    	<option>Alumno(a)</option>
+											    	<option>Profesor(a)</option>
+											    	<option>Ex-alumno(a)</option>
+											    	<option>Amigo(a)</option>
+											    	<option>Otro(a)</option>
+											    </select>
+										    </div>	
+										</div>
 									</div>
-									<div class="col-md-8 container-flex">
-										<div class="grupo-inputs">
-									        <div class="input"><i class="icn icn-md icn-perfil"></i></div>
-									        <input type="text" class="control" id="lastname" />	
-									    </div>
+									<div class="fila flexbox">
+										<div class="col-md-4 container-flex">
+											<label class="derecha flex-centrar" for="course">Carrera</label>
+										</div>
+										<div class="col-md-8 container-flex">
+											<div class="grupo-inputs">
+										        <div class="input"><i class="icn icn-md icn-libro"></i></div>
+										        <select name="course">
+													<option></option>
+											    	<option>Arquitectura</option>
+											    	<option>Diseño Gráfico</option>
+											    	<option>Diseño Industrial</option>
+											    	<option>Náutico y Marítimo</option>
+											    	<option>Ciudad y Territorio</option>
+											    	<option>Formación y Oficio</option>
+											    	<option>Interacción y Servicios</option>
+											    	<option>Doctorado en A&D</option>
+											    </select>
+										    </div>
+										</div>
 									</div>
-								</div>
-								<div class="fila flexbox">
-									<div class="col-md-4 container-flex">
-										<label class="derecha flex-centrar" for="rut">Rut</label>
-									</div>
-									<div class="col-md-8 container-flex">
-										<div class="grupo-inputs">
-									        <div class="input"><i class="icn icn-md icn-lapiz"></i></div>
-									        <input type="number" class="control" id="rut" />
-									    </div>	
-									</div>
-								</div>
-								<div class="fila flexbox">
-									<div class="col-md-4 container-flex">
-										<label class="derecha flex-centrar" for="usertype">Tipo de usuario</label>
-									</div>
-									<div class="col-md-8 container-flex">
-										<div class="grupo-inputs">
-									        <div class="input"><i class="icn icn-md icn-engranaje"></i></div>
-									        <select name="usertype">
-												<option></option>
-										    	<option>Alumno(a)</option>
-										    	<option>Profesor(a)</option>
-										    	<option>Ex-alumno(a)</option>
-										    	<option>Amigo(a)</option>
-										    	<option>Otro(a)</option>
-										    </select>
-									    </div>	
-									</div>
-								</div>
-								<div class="fila flexbox">
-									<div class="col-md-4 container-flex">
-										<label class="derecha flex-centrar" for="course">Carrera</label>
-									</div>
-									<div class="col-md-8 container-flex">
-										<div class="grupo-inputs">
-									        <div class="input"><i class="icn icn-md icn-libro"></i></div>
-									        <select name="course">
-												<option></option>
-										    	<option>Arquitectura</option>
-										    	<option>Diseño Gráfico</option>
-										    	<option>Diseño Industrial</option>
-										    	<option>Náutico y Marítimo</option>
-										    	<option>Ciudad y Territorio</option>
-										    	<option>Formación y Oficio</option>
-										    	<option>Interacción y Servicios</option>
-										    	<option>Doctorado en A&D</option>
-										    </select>
-									    </div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="fila flexbox">
-									<div class="col-md-4 container-flex">
-										<label class="derecha flex-centrar" for="year">Año ingreso a la e[ad]</label>
-									</div>
-									<div class="col-md-8 container-flex">
-										<div class="grupo-inputs">
-									        <div class="input"><i class="icn icn-md icn-ingresar"></i></div>
-									        <input type="text" class="control" id="year" />	
-									    </div>	
+									<div class="fila flexbox">
+										<div class="col-md-4 container-flex">
+											<label class="derecha flex-centrar" for="year">Año ingreso a la e[ad]</label>
+										</div>
+										<div class="col-md-8 container-flex">
+											<div class="grupo-inputs">
+										        <div class="input"><i class="icn icn-md icn-ingresar"></i></div>
+										        <input type="text" class="control" id="year" />	
+										    </div>	
+										</div>
 									</div>
 								</div>
-								<div class="fila flexbox">
-									<div class="col-md-4 container-flex">
-										<label class="flex-centrar" for="email">Correo</label>
+								<div class="col-md-6">
+									<div class="fila flexbox">
+										<div class="col-md-4 container-flex">
+											<label class="flex-centrar" for="username">Nombre de usuario</label>
+										</div>
+										<div class="col-md-8 container-flex">
+											<div class="grupo-inputs">
+										        <div class="input"><i class="icn icn-md icn-usuario"></i></div>
+										        <input type="text" class="control" id="username" />		
+										    </div>
+										</div>
 									</div>
-									<div class="col-md-8 container-flex">
-										<div class="grupo-inputs">
-									        <div class="input"><i class="icn icn-md icn-email"></i></div>
-									        <input type="email" class="control" id="email" />	
-									    </div>	
+									<div class="fila flexbox">
+										<div class="col-md-4 container-flex">
+											<label class="flex-centrar" for="email">Correo</label>
+										</div>
+										<div class="col-md-8 container-flex">
+											<div class="grupo-inputs">
+										        <div class="input"><i class="icn icn-md icn-email"></i></div>
+										        <input type="email" class="control" id="email" />	
+										    </div>	
+										</div>
 									</div>
-								</div>
-								<div class="fila flexbox">
-									<div class="col-md-4 container-flex">
-										<label class="flex-centrar" for="username">Nombre de usuario</label>
+									<div class="fila flexbox">
+										<div class="col-md-4 container-flex">
+											<label class="flex-centrar" for="password">Contraseña</label>
+										</div>
+										<div class="col-md-8 container-flex">
+											<div class="grupo-inputs">
+										        <div class="input"><i class="icn icn-md icn-abierto"></i></div>
+										        <input type="password" class="control" id="password" />		
+										    </div>
+										</div>
 									</div>
-									<div class="col-md-8 container-flex">
-										<div class="grupo-inputs">
-									        <div class="input"><i class="icn icn-md icn-usuario"></i></div>
-									        <input type="text" class="control" id="username" />		
-									    </div>
+									<div class="fila flexbox">
+										<div class="col-md-4 container-flex">
+											<label class="flex-centrar" for="password_confirm">Confirmar contraseña</label>
+										</div>
+										<div class="col-md-8 container-flex">
+											<div class="grupo-inputs">
+										        <div class="input"><i class="icn icn-md icn-cerrado"></i></div>
+										        <input type="password" class="control" id="password_confirm" />	
+										    </div>
+										</div>
 									</div>
-								</div>
-								<div class="fila flexbox">
-									<div class="col-md-4 container-flex">
-										<label class="flex-centrar" for="password">Contraseña</label>
-									</div>
-									<div class="col-md-8 container-flex">
-										<div class="grupo-inputs">
-									        <div class="input"><i class="icn icn-md icn-abierto"></i></div>
-									        <input type="password" class="control" id="password" />		
-									    </div>
-									</div>
-								</div>
-								<div class="fila flexbox">
-									<div class="col-md-4 container-flex">
-										<label class="flex-centrar" for="password_confirm">Confirmar contraseña</label>
-									</div>
-									<div class="col-md-8 container-flex">
-										<div class="grupo-inputs">
-									        <div class="input"><i class="icn icn-md icn-cerrado"></i></div>
-									        <input type="password" class="control" id="password_confirm" />	
-									    </div>
-									</div>
-								</div>
-								<div class="fila">
-									<div class="col-md-8 col-md-offset-4">
-										<button type="button" class="btn btn-accion btn-md btn-bloque">Guardar</button>
+									<div class="fila">
+										<div class="col-md-8 col-md-offset-4">
+											<button type="button" class="btn btn-accion btn-md btn-bloque">Guardar</button>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
+						</form>
 		            </div>
 		            <div class="tab-pane fade in " id="editar-perfil">
 		            	<h6>Editar perfil</h6>
