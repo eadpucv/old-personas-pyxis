@@ -21611,6 +21611,12 @@ footer p {
 .dropdown-menu {
   top: 101%;
 }
+form {
+  padding: 10px;
+  border-radius: 5px;
+  border: transparent;
+  background-color: transparent;
+}
 .btn-bloque {
   width: 100%;
 }
@@ -21652,11 +21658,6 @@ select:focus {
 .grupo-inputs select {
   margin-left: 0 !important;
 }
-.g-recaptcha {
-  transform: scale(1.15);
-  transform-origin: 0px -70px 0px;
-  height: 110px;
-}
 .tabla-personas {
   border-collapse: separate;
   width: 100%;
@@ -21681,4 +21682,9 @@ select:focus {
 }
 .tabla-personas tbody td a {
   margin-right: 5px;
+}
+.g-recaptcha {
+  transform: scale(1.15);
+  transform-origin: 0px -70px 0px;
+  height: 110px;
 }
