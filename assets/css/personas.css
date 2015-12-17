@@ -21612,10 +21612,11 @@ footer p {
   top: 101%;
 }
 form {
-  padding: 10px;
+  padding: 20px 10px;
   border-radius: 5px;
-  border: transparent;
-  background-color: transparent;
+  border: 1px solid rgba(194, 196, 186, 0.1);
+  background-color: rgba(236, 238, 230, 0.15);
+  box-shadow: 2px 2px 8px rgba(194, 196, 186, 0.2) inset;
 }
 .btn-bloque {
   width: 100%;
@@ -21687,4 +21688,54 @@ select:focus {
   transform: scale(1.15);
   transform-origin: 0px -70px 0px;
   height: 110px;
+}
+@media (max-width: 767px) {
+  .flexbox {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  body {
+    font-size: 18px;
+  }
+  form label {
+    float: left;
+    text-align: left;
+    margin-right: auto;
+    margin-left: 0 !important;
+  }
+  span.xs,
+  span.menudo,
+  p.xs,
+  p.menudo {
+    font-size: 14px;
+  }
+  .modulo-encabezado h1 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  body {
+    font-size: 18px;
+  }
+  span.xs,
+  span.menudo,
+  p.xs,
+  p.menudo {
+    font-size: 15px;
+  }
+}
+@media (min-width: 1445px) {
+  body {
+    font-size: 18px;
+  }
+  form label {
+    font-size: 1.25em;
+  }
+  span.xs,
+  span.menudo,
+  p.xs,
+  p.menudo {
+    font-size: 15px;
+  }
 }
