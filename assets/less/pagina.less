@@ -109,6 +109,15 @@ footer {
 	top: 101%;
 }
 
+form {
+	padding: 20px 10px;
+	border-radius: 5px;
+	border: 1px solid rgba(194, 196, 186, 0.1);
+	background-color: rgba(236, 238, 230, 0.15);
+	// margin-bottom: 0px !important;
+	box-shadow: 2px 2px 8px rgba(194, 196, 186, 0.2) inset;
+}
+
 // Pasar esto a Pyxis:
 .btn-bloque {
 	width: 100%;
@@ -189,7 +198,41 @@ input, select {
 	}
 }
 
+// Aux
+
+.g-recaptcha {
+    transform: scale(1.15);
+	transform-origin: 0px -70px 0px;
+	height: 110px;
+}
+
+
 
 // Rutas
 @ruta-pyxis: '..';
 @ruta-tipografias: '../fonts';
+
+
+
+  //  Extra-small screen / Phones
+@media(max-width: @screen-xs-max){
+    .flexbox {
+    	display: block;
+    }
+}
+
+// Small screen / tablet
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max){
+    
+    
+}
+
+// Medium screen / desktop
+@media (min-width: @screen-md) and (max-width: @screen-md-max){
+   
+}
+
+// Large screen / wide desktop
+@media (min-width: @screen-lg){
+    
+}

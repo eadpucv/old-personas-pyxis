@@ -6,65 +6,67 @@
 	<link rel="stylesheet" type="text/css" href="../assets/css/personas.css">
 </head>
 <body>
-	<section class="modulo-login">
-		<div class="contenedor-modulo">
-			<div class="modulo-encabezado">
-			<h1 class="fino pizarra sin-margen rojo">e[ad]<span class='sans pizarra fino'>Escuela de Arquitectura y Diseño</span></h1>
-		    <span class='xs bloque izquierda sans negro-fundido en-linea'>Pontificia Universidad Católica de Valparaíso</span>
-		</div>
-		</div>
-		<div class="modulo-cuerpo">
+	<div class="pag">
+		<section class="modulo-login">
 			<div class="contenedor-modulo">
-				<div class="grupo-formulario ">
-					<div class="fila flexbox">
-						<div class="col-md-4 container-flex">
-							<label class="derecha flex-centrar" for="email">Nombre de Usuario o Correo</label>
-						</div>
-						<div class="col-md-8 container-flex">
-							<div class="grupo-inputs">
-						        <div class="input"><i class="icn icn-light icn-lg icn-email"></i></div>
-						        <input type="email" class="control" id="email" placeholder="Introduce email" />	
-						    </div>
-						</div>
-					</div>
-					<div class="fila flexbox">
-						<div class="col-md-4 container-flex">
-							<label class="flex-centrar derecha" for="password">Contraseña</label>
-						</div>
-						<div class="col-md-8 container-flex">
-							<div class="grupo-inputs">
-						        <div class="input"><i class="icn icn-light icn-lg icn-cerrado"></i></div>
-						        <input type="password" class="control" id="password" placeholder="Introduce contraseña" required />	
-						    </div>
-						</div>
-					</div>
-					<div class="fila">
-						<div class="col-md-8 col-md-offset-4">
-							<div class="checkbox">
-								<label>
-									<input type="checkbox"> Recordarme
-								</label>
+				<div class="modulo-encabezado">
+				<h1 class="fino pizarra sin-margen rojo">e[ad]<span class='sans pizarra fino'>Escuela de Arquitectura y Diseño</span></h1>
+			    <span class='xs bloque izquierda sans negro-fundido en-linea'>Pontificia Universidad Católica de Valparaíso</span>
+			</div>
+			</div>
+			<div class="modulo-cuerpo">
+				<div class="contenedor-modulo">
+					<form class="grupo-formulario">
+						<div class="fila flexbox">
+							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 container-flex">
+								<label class="derecha flex-centrar" for="email">Nombre de Usuario</label>
+							</div>
+							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 container-flex">
+								<div class="grupo-inputs">
+							        <div class="input"><i class="icn icn-light icn-lg icn-usuario"></i></div>
+							        <input type="email" class="control" id="email" placeholder="Introduce username" />	
+							    </div>
 							</div>
 						</div>
-						<div class="col-md-8 col-md-offset-4">
-							<button type="button" class="btn btn-accion btn-lg btn-bloque">Iniciar sesión</button>
-							<span class="bloque centrado"><a href="#">¿Olvidaste tu contraseña?</a></span>
-							<hr>
+						<div class="fila flexbox">
+							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 container-flex">
+								<label class="flex-centrar derecha" for="password">Contraseña</label>
+							</div>
+							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 container-flex">
+								<div class="grupo-inputs">
+							        <div class="input"><i class="icn icn-light icn-lg icn-cerrado"></i></div>
+							        <input type="password" class="control" id="password" placeholder="Introduce contraseña" required />	
+							    </div>
+							</div>
 						</div>
+						<div class="fila">
+							<div class="col-lg-8 col-lg-offset-4 col-md-8 col-md-offset-4 col-sm-8 col-sm-offset-4">
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Recordarme
+									</label>
+								</div>
+							</div>
+							<div class="col-lg-8 col-lg-offset-4 col-md-8 col-md-offset-4 col-sm-8 col-sm-offset-4">
+								<input type="sumbit" hidden value="ir">
+								<button type="button" class="btn btn-accion btn-lg btn-bloque">Iniciar sesión</button>
+								<span class="bloque centrado"><a href="#">¿Olvidaste tu contraseña?</a></span>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="modulo-pie">
+				<div class="contenedor-modulo">
+					<div class="fila">
+					<div class="col-lg-8 col-lg-offset-4 col-md-8 col-md-offset-4 col-sm-8 col-sm-offset-4">
+						¿Eres nuevo? <a href="#">Regístrate</a>
 					</div>
 				</div>
-			</div>
-		</div>
-		<div class="modulo-pie">
-			<div class="contenedor-modulo">
-				<div class="fila">
-				<div class="col-md-8 col-md-offset-4">
-					¿Eres nuevo? <a href="#">Regístrate</a>
 				</div>
 			</div>
-			</div>
-		</div>
-	</section>
+		</section>
+	</div>
 	<footer>
 		<p class="centrado xs"><b>Personas</b> es un sistema de registro único (SSO) desarrollado por el <a href="#">.:TIG:.</a> para todos los servicios de la <a href="#">e[ad] Escuela de Arquitectura y Diseño PUCV</a>. </p>
 	</footer>
