@@ -21551,11 +21551,6 @@ footer p {
   padding-bottom: 40px;
   width: 100%;
 }
-.modulo-login .contenedor-modulo {
-  margin: auto;
-  max-width: 760px;
-  padding: 15px 0;
-}
 .modulo-login hr {
   padding-top: 25px;
   box-shadow: none;
@@ -21582,7 +21577,6 @@ footer p {
 .modulo-login .modulo-cuerpo select {
   height: 45px;
   margin-bottom: 0;
-  font-size: 20px;
 }
 .modulo-login .modulo-cuerpo select {
   font-size: 17px;
@@ -21595,6 +21589,11 @@ footer p {
 }
 .modulo-login .modulo-pie {
   padding-bottom: 20px;
+}
+.contenedor-modulo {
+  margin: auto;
+  max-width: 760px;
+  padding: 15px 0;
 }
 .modulo-portal {
   background-color: #fff;
@@ -21617,6 +21616,63 @@ form {
   border: 1px solid rgba(194, 196, 186, 0.1);
   background-color: rgba(236, 238, 230, 0.15);
   box-shadow: 2px 2px 8px rgba(194, 196, 186, 0.2) inset;
+}
+.tabla-personas {
+  border-collapse: separate;
+  width: 100%;
+  margin-bottom: 80px;
+}
+.tabla-personas thead tr {
+  border-bottom: 1px solid blue;
+}
+.tabla-personas thead th {
+  text-align: left;
+  font-family: 'Source Sans Pro' !important;
+  color: #a84744;
+  font-weight: 700;
+  padding: 4.8px;
+}
+.tabla-personas tbody tr:hover {
+  background-color: rgba(236, 238, 230, 0.8);
+  cursor: pointer;
+}
+.tabla-personas tbody td {
+  font-size: 14px;
+}
+.tabla-personas tbody td a {
+  margin-right: 5px;
+}
+.g-recaptcha {
+  transform: scale(1.15);
+  transform-origin: 0px -70px 0px;
+  height: 110px;
+}
+@media (max-width: 767px) {
+  .flexbox {
+    display: block;
+  }
+}
+@media (min-width: 1445px) {
+  .contenedor-modulo {
+    max-width: 980px;
+  }
+}
+@media (max-width: 767px) {
+  form label {
+    float: left;
+    text-align: left;
+    margin-right: auto;
+    margin-left: 0 !important;
+  }
+  span.xs,
+  span.menudo,
+  p.xs,
+  p.menudo {
+    font-size: 14px;
+  }
+  .modulo-encabezado h1 {
+    font-size: 20px;
+  }
 }
 .btn-bloque {
   width: 100%;
@@ -21657,85 +21713,45 @@ select:focus {
   display: table-cell;
 }
 .grupo-inputs select {
-  margin-left: 0 !important;
+  border-radius: 0 !important;
+  margin-left: 0px !important;
 }
-.tabla-personas {
-  border-collapse: separate;
-  width: 100%;
-  margin-bottom: 80px;
+.grupo-inputs :last-child {
+  margin-left: 0;
 }
-.tabla-personas thead tr {
-  border-bottom: 1px solid blue;
-}
-.tabla-personas thead th {
-  text-align: left;
-  font-family: 'Source Sans Pro' !important;
+form label {
+  letter-spacing: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: 'Source Sans Pro';
+  text-transform: capitalize;
   color: #a84744;
-  font-weight: 700;
-  padding: 4.8px;
 }
-.tabla-personas tbody tr:hover {
-  background-color: rgba(236, 238, 230, 0.8);
-  cursor: pointer;
-}
-.tabla-personas tbody td {
-  font-size: 14px;
-}
-.tabla-personas tbody td a {
-  margin-right: 5px;
-}
-.g-recaptcha {
-  transform: scale(1.15);
-  transform-origin: 0px -70px 0px;
-  height: 110px;
+form input {
+  color: #575851 !important;
 }
 @media (max-width: 767px) {
-  .flexbox {
-    display: block;
-  }
-}
-@media (max-width: 767px) {
-  body {
-    font-size: 18px;
-  }
   form label {
-    float: left;
-    text-align: left;
-    margin-right: auto;
-    margin-left: 0 !important;
-  }
-  span.xs,
-  span.menudo,
-  p.xs,
-  p.menudo {
     font-size: 14px;
-  }
-  .modulo-encabezado h1 {
-    font-size: 20px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  body {
-    font-size: 18px;
-  }
-  span.xs,
-  span.menudo,
-  p.xs,
-  p.menudo {
+  form label {
     font-size: 15px;
   }
 }
+@media (min-width: 992px) and (max-width: 1444px) {
+  form label {
+    font-size: 16px;
+  }
+}
 @media (min-width: 1445px) {
-  body {
+  form label {
     font-size: 18px;
   }
-  form label {
-    font-size: 1.25em;
-  }
-  span.xs,
-  span.menudo,
-  p.xs,
-  p.menudo {
-    font-size: 15px;
+  form input,
+  form .control,
+  form select {
+    font-size: 19px;
   }
 }

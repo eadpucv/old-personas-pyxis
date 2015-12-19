@@ -40,12 +40,6 @@ footer {
 	margin: 60px auto 60px auto;
 	padding-bottom: 40px;
 	width: 100%;
-
-	.contenedor-modulo {
-		margin: auto;
-		max-width: 760px;
-		padding: 15px 0;
-	}
 	hr {
 		padding-top: 25px;
 		box-shadow: none;
@@ -73,7 +67,6 @@ footer {
 		.control, select {
 			height: 45px;
 			margin-bottom: 0;
-			font-size: 20px;
 		}
 		select {
 			font-size: 17px;
@@ -88,6 +81,12 @@ footer {
 	.modulo-pie {
 		padding-bottom: 20px;
 	}
+}
+
+.contenedor-modulo {
+	margin: auto;
+	max-width: 760px;
+	padding: 15px 0;
 }
 
 .modulo-portal {
@@ -116,54 +115,6 @@ form {
 	background-color: rgba(236, 238, 230, 0.15);
 	// margin-bottom: 0px !important;
 	box-shadow: 2px 2px 8px rgba(194, 196, 186, 0.2) inset;
-}
-
-// Pasar esto a Pyxis:
-.btn-bloque {
-	width: 100%;
-}
-
-input, select {
-	&:focus {
-		box-shadow: 0 2px 0 @gris-auxiliar inset !important;
-		background-color: rgba(255, 255, 255, 0.8) !important;
-	}
-}
-
-.checkbox.bloque{
-	display: block;
-	width: 100%;
-}
-
-.grupo-inputs {
-	display: inline-table;
-	vertical-align: middle;
-	width: 100%;
-	.input {
-		background-color: @gris-auxiliar;
-		top: 0;
-		border-right: none;
-		right: 0;
-		white-space: nowrap;
-		vertical-align: middle;
-		display: table-cell;
-		// padding: 0 14.4px;
-		text-align: center;
-		.icn {
-			display: inline;
-			line-height: 1.20em;
-		}
-	}
-	input, select {
-		float: left;
-		left: -2px;
-		width: 100% !important;
-		display: table-cell;
-		// border-left: none;
-	}
-	select {
-		margin-left: 0 !important;
-	}
 }
 
 // Tabla
@@ -234,5 +185,7 @@ input, select {
 
 // Large screen / wide desktop
 @media (min-width: @screen-lg){
-    
+    .contenedor-modulo {
+		max-width: 980px;
+	}
 }

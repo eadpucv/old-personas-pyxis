@@ -1,0 +1,113 @@
+// Pasar esto a Pyxis:
+.btn-bloque {
+	width: 100%;
+}
+
+input, select {
+	&:focus {
+		box-shadow: 0 2px 0 @gris-auxiliar inset !important;
+		background-color: rgba(255, 255, 255, 0.8) !important;
+	}
+}
+
+.checkbox.bloque{
+	display: block;
+	width: 100%;
+}
+
+.grupo-inputs {
+	display: inline-table;
+	vertical-align: middle;
+	width: 100%;
+	.input {
+		background-color: @gris-auxiliar;
+		top: 0;
+		border-right: none;
+		right: 0;
+		white-space: nowrap;
+		vertical-align: middle;
+		display: table-cell;
+		// padding: 0 14.4px;
+		text-align: center;
+		.icn {
+			display: inline;
+			line-height: 1.20em;
+		}
+	}
+	input, select {
+		float: left;
+		left: -2px;
+		width: 100% !important;
+		display: table-cell;
+		// border-left: none;
+	}
+	select {
+		border-radius: 0 !important;
+		margin-left: 0px !important;
+	}
+}
+
+.grupo-inputs select:last-child {
+	
+}
+.grupo-inputs :last-child {
+	margin-left: 0;
+}
+
+form {
+	label {
+		letter-spacing: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+		font-family: @sans;
+		text-transform: capitalize;
+		color: @rojo;
+	}
+	input {
+		color: @gris !important;
+	}
+}
+
+// --------------------------------------------------
+// diseño de utilidad responsive
+
+  //  Extra-small screen / Phones
+@media(max-width: @screen-xs-max){
+	form {
+		label {
+			font-size: 14px;
+		}
+	}
+}
+
+// Small screen / tablet
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max){
+    form {
+		label {
+			font-size: 15px;
+		}
+	}
+}
+
+// Medium screen / desktop
+@media (min-width: @screen-md) and (max-width: @screen-md-max){
+	form {
+		label {
+			font-size: 16px;
+		}
+	}
+
+}
+
+// Large screen / wide desktop
+@media (min-width: @screen-lg){
+	form {
+		label {
+			font-size: 18px;
+		}
+		input, .control, select {
+			font-size: 19px;
+		}
+	}
+
+}
