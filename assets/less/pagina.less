@@ -153,8 +153,9 @@ form {
 
 .g-recaptcha {
     transform: scale(1.15);
-	transform-origin: 0px -70px 0px;
+	transform-origin: 300px -70px 0px;
 	height: 110px;
+	float: right;
 }
 
 
@@ -163,24 +164,74 @@ form {
 @ruta-pyxis: '..';
 @ruta-tipografias: '../fonts';
 
-
+.menu-pyxis {
+	.navbar-toggle {
+		display: none;
+	}
+}
 
   //  Extra-small screen / Phones
 @media(max-width: @screen-xs-max){
+	.menu-pyxis {
+		padding: 0 10px;
+		width: 100%;
+		display: inline-block;
+
+		.navbar-toggle {
+			float: right;
+			display: -webkit-flex;
+		    display: flex;
+		    height: 57px;
+		    i {
+		    	margin: auto;
+		    }
+		}
+	}
     .flexbox {
     	display: block;
     }
+    .g-recaptcha {
+    	transform: scale(0.9);
+		transform-origin: 0px 195px 0px;
+		float: left;
+	}
+	.contenedor-modulo {
+		padding: 15px;
+	}
+	.navbar-collapse {
+		width: 100%;
+	}
+
+	.nav-tabs {
+		width: 100%;
+		li {
+			display: inline-block;
+			width: 100%;
+			margin: 0;
+			a h5{
+				text-align: center;
+				font-size: 14px;
+			}
+			&:last-child a{
+				padding-right: 10px;
+			}
+		}
+	}
 }
 
 // Small screen / tablet
 @media (min-width: @screen-sm) and (max-width: @screen-sm-max){
-    
+    .navbar-collapse.collapse {
+    	display: block;
+    }
     
 }
 
 // Medium screen / desktop
 @media (min-width: @screen-md) and (max-width: @screen-md-max){
-   
+   .navbar-collapse.collapse {
+    	display: block;
+    }
 }
 
 // Large screen / wide desktop
@@ -188,4 +239,7 @@ form {
     .contenedor-modulo {
 		max-width: 980px;
 	}
+	.navbar-collapse.collapse {
+    	display: block;
+    }
 }
