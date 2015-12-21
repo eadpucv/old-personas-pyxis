@@ -21731,17 +21731,74 @@ form {
 }
 .g-recaptcha {
   transform: scale(1.15);
-  transform-origin: 0px -70px 0px;
+  transform-origin: 300px -70px 0px;
   height: 110px;
+  float: right;
+}
+.menu-pyxis .navbar-toggle {
+  display: none;
 }
 @media (max-width: 767px) {
+  .menu-pyxis {
+    padding: 0 10px;
+    width: 100%;
+    display: inline-block;
+  }
+  .menu-pyxis .navbar-toggle {
+    float: right;
+    display: -webkit-flex;
+    display: flex;
+    height: 57px;
+  }
+  .menu-pyxis .navbar-toggle i {
+    margin: auto;
+  }
   .flexbox {
+    display: block;
+  }
+  .g-recaptcha {
+    transform: scale(0.9);
+    transform-origin: 0px 195px 0px;
+    float: left;
+  }
+  .contenedor-modulo {
+    padding: 15px;
+  }
+  .navbar-collapse {
+    width: 100%;
+  }
+  .nav-tabs {
+    width: 100%;
+  }
+  .nav-tabs li {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+  }
+  .nav-tabs li a h5 {
+    text-align: center;
+    font-size: 14px;
+  }
+  .nav-tabs li:last-child a {
+    padding-right: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-collapse.collapse {
+    display: block;
+  }
+}
+@media (min-width: 992px) and (max-width: 1444px) {
+  .navbar-collapse.collapse {
     display: block;
   }
 }
 @media (min-width: 1445px) {
   .contenedor-modulo {
     max-width: 980px;
+  }
+  .navbar-collapse.collapse {
+    display: block;
   }
 }
 @media (max-width: 767px) {
@@ -21816,6 +21873,9 @@ form label {
 }
 form input {
   color: #575851 !important;
+}
+form .button {
+  font-size: 16px;
 }
 @media (max-width: 767px) {
   form label {

@@ -9,34 +9,38 @@
     <script src="../assets/js/modal.js"></script>
     <script src="../assets/js/tab.js"></script>
     <script src="../assets/js/dropdown.js"></script>
+    <script src="../assets/js/collapse.js"></script>
 </head>
 <body>
 	<div class="fondo-header-pyxis">
 		<div class="pag sin-relleno menu">
 			<nav class='menu-pyxis'>
-			  <a href='personas.html'>
-			    <div class='logo-pyxis'>
-			        <h6 class='gruesa sans rojo no-responsivo'>
-			          Personas<span class='fino gris-oscuro sans'>e[ad]</span>
-			        </h6>
-			    </div>
-			  </a>
-			  <ul class='nav-rotulos nav nav-pills'>
-			    <li><a href='http://wiki.ead.pucv.cl/index.php/Idar_Gonz%C3%A1lez'><i class="icn icn-usuario"></i> Mi perfil</a></li>
-			    <li><a href='editar.html'><i class="icn icn-lapiz"></i> Editar cuenta</a></li>
-			    <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" id="drop4" class="dropdown-toggle"><i class="icn icn-engranaje"></i> Administración<i class="icn icn-caronabajo "></i></a>
-				    <ul aria-labelledby="drop4" role="menu" class="dropdown-menu" id="menu1">
-				      <li role="presentation"><a href="administracion.html#usuarios" tabindex="-1" role="menuitem"><i class="icn icn-lupa"></i> Buscar Usuarios e[ad]</a></li>
-				      <li role="presentation"><a href="administracion.html#bloqueados" tabindex="-1" role="menuitem"><i class="icn icn-prohibir"></i> Usuarios Bloqueados</a></li>
-				      <li role="presentation"><a href="administracion.html#filtrar" tabindex="-1" role="menuitem"><i class="icn icn-rama"></i> Filtrar</a></li>
-				      <li role="presentation"><a href="registro.html" tabindex="-1" role="menuitem"><i class="icn icn-usuariomas"></i> Nuevo usuario</a></li>
-				    </ul>
-				  </li>
-			    <li><a href='ingresar.html'><i class="icn icn-salir"></i> Cerrar sesión</a></li>
-			  </ul>
-			</nav> 	
-		</div>
-	</div>  
+				<a href='personas.html'>
+			    	<div class='logo-pyxis'>
+			        	<h6 class='gruesa sans rojo no-responsivo'>
+			          		Personas<span class='fino gris-oscuro sans'>e[ad]</span>
+			        	</h6>
+			    	</div>
+			  	</a>
+			  	<a class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+		        	<i class="icn icn-menu"></i>
+		      	</a>
+			  	<ul class="nav-rotulos nav nav-pills collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+				    <li><a href='http://wiki.ead.pucv.cl/index.php/Idar_Gonz%C3%A1lez'><i class="icn icn-usuario"></i> Mi perfil</a></li>
+				    <li><a href='editar.html'><i class="icn icn-lapiz"></i> Editar cuenta</a></li>
+				    <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" id="drop4" class="dropdown-toggle"><i class="icn icn-engranaje"></i> Administración<i class="icn icn-caronabajo "></i></a>
+					    <ul aria-labelledby="drop4" role="menu" class="dropdown-menu" id="menu1">
+							<li role="presentation"><a href="administracion.html#usuarios" tabindex="-1" role="menuitem"><i class="icn icn-lupa"></i> Buscar Usuarios e[ad]</a></li>
+							<li role="presentation"><a href="administracion.html#bloqueados" tabindex="-1" role="menuitem"><i class="icn icn-prohibir"></i> Usuarios Bloqueados</a></li>
+							<li role="presentation"><a href="administracion.html#filtrar" tabindex="-1" role="menuitem"><i class="icn icn-rama"></i> Filtrar</a></li>
+							<li role="presentation"><a href="registro.html" tabindex="-1" role="menuitem"><i class="icn icn-usuariomas"></i> Nuevo usuario</a></li>
+					    </ul>
+				  	</li>
+			    	<li><a href='ingresar.html'><i class="icn icn-salir"></i> Cerrar sesión</a></li>
+			  	</ul>
+				</nav> 	
+			</div>
+		</div>  
 	<section class="modulo-portal">
 		<img src="../assets/img/estorninos.jpg" alt="">
 	</section>
