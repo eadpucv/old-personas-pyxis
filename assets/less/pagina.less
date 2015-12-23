@@ -123,7 +123,7 @@ form {
 	border-collapse: separate;
 	width: 100%;
 	margin-bottom: 80px;
-	thead {
+	thead, tfoot {
 		tr{
 			border-bottom: 1px solid blue;
 		}
@@ -133,17 +133,45 @@ form {
 			color: @rojo;
 			.grueso;
 			padding: 4.8px;
+			&:last-child {
+				text-align: right;
+			}
+			ul {
+				margin: 0;
+				padding: 0;
+				display: -webkit-flex;
+			    display: flex;
+				li {
+					float: left;
+					list-style: none;
+					margin: auto;
+				}
+			}
 		}
 	}
 	tbody {
 		tr:hover {
 			background-color: @gris-auxiliar;
 			cursor: pointer;
+			td:first-child i {
+				visibility: visible;
+				color: @gris;
+			}
 		}
 		td {
 			font-size: 14px;
 			a {
 				margin-right: 5px;
+			}
+			&:first-child i {
+				visibility: hidden;
+			}
+			&:last-child {
+				input[type="checkbox"] {
+					// float: right;
+					display: block;
+					margin: auto;
+				}
 			}
 		}
 	}

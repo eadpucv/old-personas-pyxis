@@ -21709,25 +21709,55 @@ form {
   width: 100%;
   margin-bottom: 80px;
 }
-.tabla-personas thead tr {
+.tabla-personas thead tr,
+.tabla-personas tfoot tr {
   border-bottom: 1px solid blue;
 }
-.tabla-personas thead th {
+.tabla-personas thead th,
+.tabla-personas tfoot th {
   text-align: left;
   font-family: 'Source Sans Pro' !important;
   color: #a84744;
   font-weight: 700;
   padding: 4.8px;
 }
+.tabla-personas thead th:last-child,
+.tabla-personas tfoot th:last-child {
+  text-align: right;
+}
+.tabla-personas thead th ul,
+.tabla-personas tfoot th ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-flex;
+  display: flex;
+}
+.tabla-personas thead th ul li,
+.tabla-personas tfoot th ul li {
+  float: left;
+  list-style: none;
+  margin: auto;
+}
 .tabla-personas tbody tr:hover {
   background-color: rgba(236, 238, 230, 0.8);
   cursor: pointer;
+}
+.tabla-personas tbody tr:hover td:first-child i {
+  visibility: visible;
+  color: #575851;
 }
 .tabla-personas tbody td {
   font-size: 14px;
 }
 .tabla-personas tbody td a {
   margin-right: 5px;
+}
+.tabla-personas tbody td:first-child i {
+  visibility: hidden;
+}
+.tabla-personas tbody td:last-child input[type="checkbox"] {
+  display: block;
+  margin: auto;
 }
 .g-recaptcha {
   transform: scale(1.15);
@@ -21876,6 +21906,89 @@ form input {
 }
 form .button {
   font-size: 16px;
+}
+.tooltip {
+  position: absolute;
+  z-index: 1030;
+  display: block;
+  visibility: visible;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.4;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.tooltip a:hover {
+  color: #FFFFFF !important;
+}
+.tooltip.in {
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+.tooltip.top {
+  margin-top: -3px;
+  padding: 5px 0;
+}
+.tooltip.right {
+  margin-left: 3px;
+  padding: 0 5px;
+}
+.tooltip.bottom {
+  margin-top: 3px;
+  padding: 5px 0;
+}
+.tooltip.left {
+  margin-left: -3px;
+  padding: 0 5px;
+}
+.tooltip-inner {
+  max-width: 200px;
+  padding: 3px 8px;
+  color: #fff;
+  text-align: center;
+  font-family: 'Source Sans Pro';
+  text-decoration: none;
+  background-color: #000;
+  border-radius: 4px;
+}
+.tooltip-imagenes .tooltip {
+  font-size: 12.8px;
+}
+.tooltip-imagenes .tooltip-inner {
+  color: #010101;
+  background-color: #f5f2db;
+  border-radius: 1px;
+}
+.tooltip-imagenes .tooltip.top .tooltip-arrow {
+  border-top-color: #eceee6;
+}
+.tooltip-imagenes .tooltip.top-left .tooltip-arrow {
+  border-top-color: #eceee6;
+}
+.tooltip-imagenes .tooltip.top-right .tooltip-arrow {
+  border-top-color: #eceee6;
+}
+.tooltip-imagenes .tooltip.right .tooltip-arrow {
+  border-right-color: #eceee6;
+}
+.tooltip-imagenes .tooltip.left .tooltip-arrow {
+  border-left-color: #eceee6;
+}
+.tooltip-imagenes .tooltip.bottom .tooltip-arrow {
+  border-bottom-color: #eceee6;
+}
+.tooltip-imagenes .tooltip.bottom-left .tooltip-arrow {
+  border-bottom-color: #eceee6;
+}
+.tooltip-imagenes .tooltip.bottom-right .tooltip-arrow {
+  border-bottom-color: #eceee6;
+}
+.tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
 }
 @media (max-width: 767px) {
   form label {
