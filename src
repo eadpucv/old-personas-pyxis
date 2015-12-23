@@ -21990,6 +21990,37 @@ form .button {
   border-color: transparent;
   border-style: solid;
 }
+.modal.helper .modal-dialog {
+  width: 100vw;
+  top: 20%;
+}
+.modal.helper .modal-content {
+  border-radius: 0;
+}
+.modal.helper .modal-body {
+  display: -webkit-flex;
+  display: flex;
+  margin: 40px auto auto auto;
+  max-width: 950px;
+}
+.modal.helper .modal-body h2,
+.modal.helper .modal-body h3,
+.modal.helper .modal-body i {
+  margin: auto;
+}
+.modal.helper .modal-body i {
+  margin-right: 20px;
+}
+.modal.helper.error h2,
+.modal.helper.error h3,
+.modal.helper.error i {
+  color: #a84744;
+}
+.modal.helper.exito h2,
+.modal.helper.exito h3,
+.modal.helper.exito i {
+  color: #76a127;
+}
 @media (max-width: 767px) {
   form label {
     font-size: 14px;

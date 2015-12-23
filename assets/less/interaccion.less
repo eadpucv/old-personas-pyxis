@@ -153,6 +153,38 @@ form {
   border-style: solid;
 }
 
+.modal.helper {
+	.modal-dialog {
+		width: 100vw;
+		top: 20%;
+	}
+	.modal-content {
+		border-radius: 0;
+	}
+	.modal-body {
+		display: -webkit-flex;
+	    display: flex;
+	    margin: 40px auto auto auto;
+	    max-width: 950px;
+	    h2, h3, i {
+	    	margin: auto;
+	    }
+	    i {
+	    	margin-right: 20px;
+	    }
+	}
+	&.error {
+		h2, h3, i{
+			color: @rojo;
+		}
+	}
+	&.exito {
+		h2, h3, i{
+			color: @verde;
+		}
+	}
+}
+
 // --------------------------------------------------
 // diseño de utilidad responsive
 
