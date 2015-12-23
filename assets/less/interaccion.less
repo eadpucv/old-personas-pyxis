@@ -71,6 +71,120 @@ form {
 	}
 }
 
+.tooltip {
+  position: absolute;
+  z-index: @zindex-tooltip; 
+  display: block;
+  visibility: visible;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.4;
+  .opacity(0);
+
+  a{
+    &:hover{
+      color: @blanco !important;
+    }
+  }
+
+  &.in     { .opacity(@tooltip-opacity); }
+  &.top    { margin-top:  -3px; padding: @tooltip-arrow-width 0; }
+  &.right  { margin-left:  3px; padding: 0 @tooltip-arrow-width; }
+  &.bottom { margin-top:   3px; padding: @tooltip-arrow-width 0; }
+  &.left   { margin-left: -3px; padding: 0 @tooltip-arrow-width; }
+}
+
+.tooltip-inner {
+  max-width: @tooltip-max-width;
+  padding: 3px 8px;
+  color: @tooltip-color;
+  text-align: center;
+  font-family: @sans;
+  text-decoration: none;
+  background-color: @tooltip-bg;
+  border-radius: @border-radius-base;
+}
+
+.tooltip-imagenes{
+
+.tooltip {
+  font-size: @cuerpo * 0.8;
+}
+
+.tooltip-inner {
+  color: @negro;
+  background-color: @masking;  
+  border-radius: 1px;
+}
+
+.tooltip {
+  &.top .tooltip-arrow {
+    border-top-color: @gris-blanco;
+  }
+  &.top-left .tooltip-arrow {
+    border-top-color: @gris-blanco;
+  }
+  &.top-right .tooltip-arrow {
+    border-top-color: @gris-blanco;
+  }
+  &.right .tooltip-arrow {
+    border-right-color: @gris-blanco;
+  }
+  &.left .tooltip-arrow {
+    border-left-color: @gris-blanco;
+  }
+  &.bottom .tooltip-arrow {
+    border-bottom-color: @gris-blanco;
+  }
+  &.bottom-left .tooltip-arrow {
+    border-bottom-color: @gris-blanco;
+  }
+  &.bottom-right .tooltip-arrow {
+    border-bottom-color: @gris-blanco;
+  }
+}
+}
+
+.tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+
+.modal.helper {
+	.modal-dialog {
+		width: 100vw;
+		top: 20%;
+	}
+	.modal-content {
+		border-radius: 0;
+	}
+	.modal-body {
+		display: -webkit-flex;
+	    display: flex;
+	    margin: 40px auto auto auto;
+	    max-width: 950px;
+	    h2, h3, i {
+	    	margin: auto;
+	    }
+	    i {
+	    	margin-right: 20px;
+	    }
+	}
+	&.error {
+		h2, h3, i{
+			color: @rojo;
+		}
+	}
+	&.exito {
+		h2, h3, i{
+			color: @verde;
+		}
+	}
+}
+
 // --------------------------------------------------
 // diseño de utilidad responsive
 

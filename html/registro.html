@@ -5,6 +5,9 @@
 	<title>Personas e[ad] - Registrar nuevo usuario</title>
 	<link rel="stylesheet" type="text/css" href="../assets/css/personas.css">
 	<script src='https://www.google.com/recaptcha/api.js'></script>
+	<script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/transition.js"></script>
+    <script src="../assets/js/modal.js"></script>
 </head>
 <body>
 	<section class="modulo-login">
@@ -167,7 +170,7 @@
 									</div>
 								</div>
 								<div class="col-md-10 col-md-offset-2 col-sm-10 col-sm-offset-2 col-xs-12">
-									<button type="button" class="btn btn-accion btn-lg btn-bloque">Crear nuevo usuario</button>
+									<button type="button" class="btn btn-accion btn-lg btn-bloque" data-toggle="modal" data-target="#modalExito">Crear nuevo usuario</button>
 								</div>
 							</div>
 						</div>
@@ -179,5 +182,19 @@
 	<footer>
 		<p class="centrado xs"><b>Personas</b> es un sistema de registro único (SSO) desarrollado por el <a href="#">.:TIG:.</a> para todos los servicios de la <a href="#">e[ad] Escuela de Arquitectura y Diseño PUCV</a>. </p>
 	</footer>
+	<!-- Modal -->
+	<div class="modal fade helper exito" id="modalExito" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-body">
+	      	<i class="icn icn-visto icn-lg"></i> 
+	        <h3 class="sans ">El usuario (username) ha sido creado exitosamente. Te hemos enviado un email con tu información.</h3>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-accion btn-lg" data-dismiss="modal">Ok, entiendo</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 </body>
 </html>

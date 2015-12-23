@@ -10,6 +10,7 @@
     <script src="../assets/js/tab.js"></script>
     <script src="../assets/js/dropdown.js"></script>
     <script src="../assets/js/collapse.js"></script>
+    <script src="../assets/js/tooltip.js"></script>
 </head>
 <body>
 	<div class="fondo-header-pyxis">
@@ -70,40 +71,104 @@
 						<table class="tabla-personas">
 							<thead>
 								<tr>
-									<th>Usuario</th><th>Nombre</th><th>Apellido</th><th>Correo electrónico</th><th>Tipo</th><th>Acciones</th>		
+									<th>Usuario</th><th>Nombre</th><th>Apellido</th><th>Correo electrónico</th><th>Tipo</th>
+									<th>
+										<ul class="tooltip-demo margen-vertical-md">
+											<li>
+												<a class='sans' data-toggle="modal" data-target="#modalExito" data-toggle="tooltip" data-toggle="tooltip" data-original-title="Bloquear"><i class="icn icn-prohibir" ></i></a>
+											</li>
+											<li>
+												<a class='sans' data-toggle="modal" data-target="#modalExito" data-toggle="tooltip" data-toggle="tooltip" data-original-title="Permiso de Administrador"><i class="icn icn-acto"></i></a>
+											</li>
+											<li>
+												<a class='sans' data-toggle="modal" data-target="#modalExito" data-toggle="tooltip" data-toggle="tooltip" data-original-title="Agregar a lista de correo"><i class="icn icn-mas"></i></a>
+											</li>
+											<li>
+												<a class='sans' data-toggle="modal" data-target="#modalExito" data-toggle="tooltip" data-toggle="tooltip" data-original-title="Enviar e-mail"><i class="icn icn-email"></i></a> 
+											</li>
+										</ul>
+									</th>		
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
-									<td>aalfarop</td><td>Arlett Sarhay</td><td>Alfaro Pacheco</td><td>lord_of88@yahoo.com</td><td>Alumno</td><td><a href="#"><i class="icn icn-prohibir"></i></a> <a href="#"><i class="icn icn-acto"></i></a> <a href="#"><i class="icn icn-mas"></i></a> <input type="checkbox"> </td>
+									<td><i class="icn icn-lapiz icn-sm icn-light"></i> aalfarop</td><td>Arlett Sarhay</td><td>Alfaro Pacheco</td><td>lord_of88@yahoo.com</td><td>Alumno</td><td><input type="checkbox"> </td>
 								</tr>
 								<tr>
-									<td>aalfarop</td><td>Arlett Sarhay</td><td>Alfaro Pacheco</td><td>lord_of88@yahoo.com</td><td>Alumno</td><td><a href="#"><i class="icn icn-prohibir"></i></a> <a href="#"><i class="icn icn-acto"></i></a> <a href="#"><i class="icn icn-mas"></i></a> <input type="checkbox"> </td>
+									<td><i class="icn icn-lapiz icn-sm icn-light"></i> aalfarop</td><td>Arlett Sarhay</td><td>Alfaro Pacheco</td><td>lord_of88@yahoo.com</td><td>Alumno</td><td><input type="checkbox"> </td>
 								</tr>
 								<tr>
-									<td>aalfarop</td><td>Arlett Sarhay</td><td>Alfaro Pacheco</td><td>lord_of88@yahoo.com</td><td>Alumno</td><td><a href="#"><i class="icn icn-prohibir"></i></a> <a href="#"><i class="icn icn-acto"></i></a> <a href="#"><i class="icn icn-mas"></i></a> <input type="checkbox"> </td>
+									<td><i class="icn icn-lapiz icn-sm icn-light"></i> aalfarop</td><td>Arlett Sarhay</td><td>Alfaro Pacheco</td><td>lord_of88@yahoo.com</td><td>Alumno</td><td><input type="checkbox"> </td>
 								</tr>
 							</tbody>
+							<tfoot>
+								<tr>
+									<th>Usuario</th><th>Nombre</th><th>Apellido</th><th>Correo electrónico</th><th>Tipo</th>
+									<th>
+										<ul class="tooltip-demo margen-vertical-md">
+											<li>
+												<a class='sans' data-toggle="modal" data-target="#modalExito" data-toggle="tooltip" data-toggle="tooltip" data-original-title="Bloquear"><i class="icn icn-prohibir" ></i></a>
+											</li>
+											<li>
+												<a class='sans' data-toggle="modal" data-target="#modalExito" data-toggle="tooltip" data-toggle="tooltip" data-original-title="Permiso de Administrador"><i class="icn icn-acto"></i></a>
+											</li>
+											<li>
+												<a class='sans' data-toggle="modal" data-target="#modalExito" data-toggle="tooltip" data-toggle="tooltip" data-original-title="Agregar a lista de correo"><i class="icn icn-mas"></i></a>
+											</li>
+											<li>
+												<a class='sans' data-toggle="modal" data-target="#modalExito" data-toggle="tooltip" data-toggle="tooltip" data-original-title="Enviar e-mail"><i class="icn icn-email"></i></a> 
+											</li>
+										</ul>
+									</th>		
+								</tr>
+							</tfoot>
 						</table>
 		            </div>
 		            <div class="tab-pane fade in " id="bloqueados">
 		            	<table class="tabla-personas">
 							<thead>
 								<tr>
-									<th>Usuario</th><th>Nombre</th><th>Apellido</th><th>Correo electrónico</th><th>Tipo</th><th>Acciones</th>		
+									<th>Usuario</th><th>Nombre</th><th>Apellido</th><th>Correo electrónico</th><th>Tipo</th>
+									<th>
+										<ul class="tooltip-demo margen-vertical-md">
+											<li>
+												<a class='sans' data-toggle="modal" data-target="#modalExito" data-toggle="tooltip" data-toggle="tooltip" data-original-title="Activar"><i class="icn icn-visto" ></i></a>
+											</li>
+											<li>
+												<a class='sans' data-toggle="modal" data-target="#modalExito" data-toggle="tooltip" data-toggle="tooltip" data-original-title="Borrar"><i class="icn icn-equis"></i></a>
+											</li>
+											
+										</ul>
+									</th>		
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
-									<td>aalfarop</td><td>Arlett Sarhay</td><td>Alfaro Pacheco</td><td>lord_of88@yahoo.com</td><td>Alumno</td><td><a href="#"><i class="icn icn-visto"></i></a> <a href="#"><i class="icn icn-equis"></i></a> </a> <input type="checkbox"> </td>
+									<td><i class="icn icn-lapiz icn-sm icn-light"></i> aalfarop</td><td>Arlett Sarhay</td><td>Alfaro Pacheco</td><td>lord_of88@yahoo.com</td><td>Alumno</td><td> <input type="checkbox"> </td>
 								</tr>
 								<tr>
-									<td>aalfarop</td><td>Arlett Sarhay</td><td>Alfaro Pacheco</td><td>lord_of88@yahoo.com</td><td>Alumno</td><td><a href="#"><i class="icn icn-visto"></i></a> <a href="#"><i class="icn icn-equis"></i></a> </a> <input type="checkbox"> </td>
+									<td><i class="icn icn-lapiz icn-sm icn-light"></i> aalfarop</td><td>Arlett Sarhay</td><td>Alfaro Pacheco</td><td>lord_of88@yahoo.com</td><td>Alumno</td><td> <input type="checkbox"> </td>
 								</tr>
 								<tr>
-									<td>aalfarop</td><td>Arlett Sarhay</td><td>Alfaro Pacheco</td><td>lord_of88@yahoo.com</td><td>Alumno</td><td><a href="#"><i class="icn icn-visto"></i></a> <a href="#"><i class="icn icn-equis"></i></a> </a> <input type="checkbox"> </td>
+									<td><i class="icn icn-lapiz icn-sm icn-light"></i> aalfarop</td><td>Arlett Sarhay</td><td>Alfaro Pacheco</td><td>lord_of88@yahoo.com</td><td>Alumno</td><td> <input type="checkbox"> </td>
 								</tr>
 							</tbody>
+							<tfoot>
+								<tr>
+									<th>Usuario</th><th>Nombre</th><th>Apellido</th><th>Correo electrónico</th><th>Tipo</th>
+									<th>
+										<ul class="tooltip-demo margen-vertical-md">
+											<li>
+												<a class='sans' data-toggle="modal" data-target="#modalExito" data-toggle="tooltip" data-toggle="tooltip" data-original-title="Activar"><i class="icn icn-visto" ></i></a>
+											</li>
+											<li>
+												<a class='sans' data-toggle="modal" data-target="#modalExito" data-toggle="tooltip" data-toggle="tooltip" data-original-title="Borrar"><i class="icn icn-equis"></i></a>
+											</li>
+											
+										</ul>
+									</th>		
+								</tr>
+							</tfoot>
 						</table>
 		            </div>
 		            <div class="tab-pane fade in " id="filtrar">
@@ -289,6 +354,20 @@
 	<footer>
 		<p class="centrado xs"><b>Personas</b> es un sistema de registro único (SSO) desarrollado por el <a href="#">.:TIG:.</a> para todos los servicios de la <a href="#">e[ad] Escuela de Arquitectura y Diseño PUCV</a>. </p>
 	</footer>
+	<!-- Modal -->
+	<div class="modal fade helper exito" id="modalExito" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-body">
+	        <h2><i class="icn icn-visto icn-lg"></i> La acción se ha realizado satisfactoriamente!</h2>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-accion" data-dismiss="modal">Ok</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
 	<script>
 	// Abre tab según href anterior
 		$(function(){
@@ -302,6 +381,7 @@
 		    $('html,body').scrollTop(scrollmem);
 		  });
 		});
+		$('.tooltip-demo').tooltip({selector: "a[data-toggle=tooltip]"});
 	</script>
 </body>
 </html>
