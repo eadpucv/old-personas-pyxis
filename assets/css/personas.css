@@ -21718,9 +21718,6 @@ form {
     width: 100%;
     margin: 0;
   }
-  .nav-tabs li.active > a {
-    background-color: rgba(236, 238, 230, 0.8) !important;
-  }
   .nav-tabs li a h5 {
     text-align: center;
     font-size: 14px;
@@ -21941,9 +21938,6 @@ form .button {
   form label {
     font-size: 14px;
   }
-  .nav-icn {
-    visibility: hidden;
-  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   form label {
@@ -21963,8 +21957,5 @@ form .button {
   form .control,
   form select {
     font-size: 19px;
-  }
-  .nav-icn {
-    visibility: visible;
   }
 }
