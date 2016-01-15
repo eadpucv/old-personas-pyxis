@@ -21805,6 +21805,9 @@ form {
     width: 100%;
     margin: 0;
   }
+  .nav-tabs li.active > a {
+    background-color: rgba(236, 238, 230, 0.8) !important;
+  }
   .nav-tabs li a h5 {
     text-align: center;
     font-size: 14px;
@@ -21851,6 +21854,39 @@ form {
 .btn-bloque {
   width: 100%;
 }
+button.btn-facebook,
+button.btn-twitter {
+  margin-top: 0;
+  color: #fff;
+}
+button.btn-facebook:hover,
+button.btn-twitter:hover {
+  color: #fff;
+}
+button.btn-facebook:active,
+button.btn-twitter:active {
+  margin: 0 auto 15px auto;
+}
+button.btn-facebook.btn-deshabilitado,
+button.btn-twitter.btn-deshabilitado {
+  background-color: #999;
+}
+button.btn-deshabilitado,
+a.btn-deshabilitado {
+  background-color: #999;
+}
+button.btn-facebook {
+  background-color: #3b5998;
+}
+button.btn-facebook:hover {
+  background-color: #2d4373;
+}
+button.btn-twitter {
+  background-color: #00aced;
+}
+button.btn-twitter:hover {
+  background-color: #0087ba;
+}
 input:focus,
 select:focus {
   box-shadow: 0 2px 0 rgba(236, 238, 230, 0.8) inset !important;
@@ -21873,6 +21909,8 @@ select:focus {
   white-space: nowrap;
   vertical-align: middle;
   display: table-cell;
+  max-width: 50px !important;
+  width: 50px !important;
   text-align: center;
 }
 .grupo-inputs .input .icn {
@@ -21898,8 +21936,10 @@ form label {
   padding-top: 0;
   padding-bottom: 0;
   font-family: 'Source Sans Pro';
-  text-transform: capitalize;
+  text-transform: none;
   color: #a84744;
+  font-weight: 200;
+  margin-bottom: 5px;
 }
 form input {
   color: #575851 !important;
@@ -22021,28 +22061,47 @@ form .button {
 .modal.helper.exito i {
   color: #76a127;
 }
+.bloque-perfil {
+  text-align: center;
+}
+.bloque-perfil .cabecera {
+  width: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  max-width: 400px;
+  margin: 20px auto;
+}
+.bloque-perfil .cabecera img {
+  width: 100%;
+}
 @media (max-width: 767px) {
   form label {
-    font-size: 14px;
+    font-size: 11px;
+  }
+  .nav-icn {
+    visibility: hidden;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   form label {
-    font-size: 15px;
+    font-size: 12px;
   }
 }
 @media (min-width: 992px) and (max-width: 1444px) {
   form label {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 @media (min-width: 1445px) {
   form label {
-    font-size: 18px;
+    font-size: 16px;
   }
   form input,
   form .control,
   form select {
     font-size: 19px;
+  }
+  .nav-icn {
+    visibility: visible;
   }
 }

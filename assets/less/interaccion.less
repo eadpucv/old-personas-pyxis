@@ -3,6 +3,37 @@
 	width: 100%;
 }
 
+
+button.btn-facebook, button.btn-twitter {
+	margin-top: 0;
+	color: #fff;
+	&:hover {
+		color: #fff;
+	}
+	&:active {
+		margin: 0 auto 15px auto;
+	}
+	&.btn-deshabilitado {
+		background-color: #999;
+	}
+}
+button, a {
+	&.btn-deshabilitado {
+		background-color: #999;
+	}
+}
+button.btn-facebook {
+	background-color: #3b5998;
+	&:hover {
+		background-color: darken(#3b5998, 10%);
+	}
+}
+button.btn-twitter {
+	background-color: #00aced;
+	&:hover {
+		background-color: darken(#00aced, 10%);
+	}
+}
 input, select {
 	&:focus {
 		box-shadow: 0 2px 0 @gris-auxiliar inset !important;
@@ -27,7 +58,8 @@ input, select {
 		white-space: nowrap;
 		vertical-align: middle;
 		display: table-cell;
-		// padding: 0 14.4px;
+		max-width: 50px !important;
+		width: 50px !important;
 		text-align: center;
 		.icn {
 			display: inline;
@@ -60,8 +92,10 @@ form {
 		padding-top: 0;
 		padding-bottom: 0;
 		font-family: @sans;
-		text-transform: capitalize;
+		text-transform: none;
 		color: @rojo;
+		.fino;
+		.margen-inf-xs;
 	}
 	input {
 		color: @gris !important;
@@ -185,6 +219,20 @@ form {
 	}
 }
 
+.bloque-perfil {
+	text-align: center;
+	.cabecera {
+		width: 100%;
+		border-radius: 50%;
+		overflow: hidden;
+		max-width: 400px;
+		margin: 20px auto;
+		img {
+			width: 100%;
+		}
+	}
+}
+
 // --------------------------------------------------
 // diseño de utilidad responsive
 
@@ -192,7 +240,7 @@ form {
 @media(max-width: @screen-xs-max){
 	form {
 		label {
-			font-size: 14px;
+			font-size: 11px;
 		}
 	}
 	.nav-icn {
@@ -204,7 +252,7 @@ form {
 @media (min-width: @screen-sm) and (max-width: @screen-sm-max){
     form {
 		label {
-			font-size: 15px;
+			font-size: 12px;
 		}
 	}
 }
@@ -213,7 +261,7 @@ form {
 @media (min-width: @screen-md) and (max-width: @screen-md-max){
 	form {
 		label {
-			font-size: 16px;
+			font-size: 14px;
 		}
 	}
 
@@ -223,7 +271,7 @@ form {
 @media (min-width: @screen-lg){
 	form {
 		label {
-			font-size: 18px;
+			font-size: 16px;
 		}
 		input, .control, select {
 			font-size: 19px;
