@@ -2,7 +2,7 @@
 .btn-bloque {
 	width: 100%;
 }
-button.btn-facebook, button.btn-twitter {
+button.btn-facebook, button.btn-twitter, button.btn-google {
 	margin-top: 0;
 	color: #fff;
 	&:hover {
@@ -30,6 +30,12 @@ button.btn-twitter {
 	background-color: #00aced;
 	&:hover {
 		background-color: darken(#00aced, 10%);
+	}
+}
+button.btn-google {
+	background-color: #dd4b39;
+	&:hover {
+		background-color: darken(#dd4b39, 10%);
 	}
 }
 input, select {
@@ -72,13 +78,17 @@ input, select {
 		// border-left: none;
 	}
 	select {
-		border-radius: 0 !important;
+		// border:1px solid red;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-webkit-border-radius: 0px;
+		border-radius: 0px !important;
 		margin-left: 0px !important;
 	}
 }
 
 .grupo-inputs select:last-child {
-	
+	// border:1px solid blue;
 }
 .grupo-inputs :last-child {
 	margin-left: 0;

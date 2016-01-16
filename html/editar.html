@@ -16,7 +16,7 @@
 <body>
 	<div class="fondo-header-pyxis">
 		<div class="pag sin-relleno menu">
-			<nav class='menu-pyxis'>
+			<nav class='menu-nav'>
 				<a href='personas.html'>
 			    	<div class='logo-pyxis'>
 			        	<h6 class='gruesa sans rojo no-responsivo'>
@@ -35,21 +35,16 @@
 			</nav> 	
 		</div>
 	</div>
-	<section class="modulo-login">
+	<section class="modulo">
 		<div class="modulo-cuerpo">
-			<div class="fondo-blanco margen-inf-sm">
-				<div class="contenedor-modulo">
-					<i class="icn icn-lapiz rojo margen-der-sm nav-icn"></i> 
-					<ul class="nav nav-tabs" role="tablist">
-	                    <li class="active"><a><h5 class="rojo sin-margen">Editar tu cuenta</h5></a></li>
-	                </ul>
-				</div>
-			</div>
 			<div class="contenedor-modulo">
 				<div class="tab-content margen-sup">
 		            	<form>
+		            		<div class="col-md-12 col-sm-12 col-xs-12">
+		            			<h3 class="fino sans rojo"><i class="icn icn-lapiz nav-icn"></i> Editar tu cuenta</h3>
+		            		</div>
 						<div class="col-md-6 col-sm-6 col-xs-12">
-							<h3 class="fino sans pizarra">Tus datos personales</h3>
+							<h5 class="fino sans pizarra">Tus datos personales</h5>
 							<hr>
 							<div class="margen-inf-sm">
 								<label for="username">Nombre de usuario</label>
@@ -68,7 +63,7 @@
 							<div class="margen-inf-sm">
 								<label for="usertype">Relación con la e[ad]</label>
 								<div class="grupo-inputs">
-							        <div class="input"><i class="icn icn-md icn-engranaje"></i></div>
+							        <div class="input"><i class="icn icn-md icn-caronabajo "></i></div>
 							        <select name="usertype">
 										<option></option>
 								    	<option selected>Alumno(a)</option>
@@ -82,7 +77,7 @@
 							<div class="margen-inf-sm">
 								<label for="course">Carrera</label>
 								<div class="grupo-inputs">
-							        <div class="input"><i class="icn icn-md icn-libro"></i></div>
+							        <div class="input"><i class="icn icn-md icn-caronabajo "></i></div>
 							        <select name="course">
 										<option></option>
 								    	<option selected>Arquitectura</option>
@@ -100,23 +95,38 @@
 							        <input type="text" class="control" id="year" value="2014" />	
 							    </div>
 							</div>
+							<div class="margen-inf-sm">
+								<label for="telephone">Teléfono</label>
+								<div class="grupo-inputs">
+							        <div class="input"><i class="icn icn-md icn-movil"></i></div>
+							        <input type="tel" class="control" id="telephone" value="59585558" />	
+							    </div>
+							</div>
+							<div class="margen-inf-sm">
+								<label for="adress">Dirección</label>
+								<div class="grupo-inputs">
+							        <div class="input"><i class="icn icn-md icn-mapa"></i></div>
+							        <input type="text" class="control" id="adress" value="Av alemania 273, Valparaíso" />	
+							    </div>
+							</div>
 						</div>
 						<div class="col-md-6 col-sm-6 col-xs-12">
-							<h3 class="fino sans pizarra">Contacto y seguridad</h3>
+							<h5 class="fino sans pizarra">Contacto y seguridad</h5>
 							<hr>
 							<div class="margen-inf-sm">
 								<label for="lastname">Vinculación con redes sociales</label>
 								<div class="bloque">
 									<button type="button" class="btn btn-facebook">Conectado <i class="icn icn-md icn-facebook"></i></button>
-									<button type="button" class="btn btn-twitter">Conectado <i class="icn icn-md icn-twitter"></i></button>
+									<button type="button" class="btn btn-google">Conectado <i class="icn icn-md icn-google"></i></button>
 								</div>
 							</div>
 							<div class="margen-inf-sm">
 								<label for="email">Correo</label>
-								<div class="grupo-inputs">
+								<p>juan_perez@hotmail.com</p>
+								<!-- <div class="grupo-inputs">
 							        <div class="input"><i class="icn icn-md icn-email"></i></div>
 							        <input type="email" class="control" id="email" value="juan_perez@hotmail.com" />	
-							    </div>	
+							    </div>	 -->
 							</div>
 							<div class="margen-inf-sm">
 								<label for="password">Cambiar contraseña</label>
