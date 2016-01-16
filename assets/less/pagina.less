@@ -36,10 +36,13 @@ footer {
     font-weight: 300;
 }
 
-.modulo-login, .modulo {
+.modulo {
 	margin: 60px auto 60px auto;
 	padding-bottom: 40px;
 	width: 100%;
+	&.modulo-login .grupo-formulario{
+		padding: 35px 70px;
+	}
 	hr {
 		box-shadow: none;
 		border-color: @gris-claro;
@@ -51,25 +54,6 @@ footer {
 		margin-bottom: 10px;
 	}
 	.modulo-cuerpo {
-		label {
-			text-align: right;
-			display: inline-block;
-			margin-right: 0;
-		}
-		.checkbox label {
-			text-align: left;
-			span {
-				font-size: 13px;
-				display: inline;
-			}
-		}
-		.control, select {
-			height: 45px;
-			margin-bottom: 0;
-		}
-		select {
-			font-size: 17px;
-		}
 		.fila {
 			margin-bottom: 20px;
 			&:last-child {
@@ -257,6 +241,9 @@ form {
     	transform: scale(0.9);
 		transform-origin: 0px 195px 0px;
 		float: left;
+	}
+	.modulo.modulo-login .grupo-formulario{
+		padding: 10px;
 	}
 	.contenedor-modulo {
 		padding: 15px;

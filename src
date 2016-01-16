@@ -21633,58 +21633,29 @@ footer p {
   color: #c2c4ba;
   font-weight: 300;
 }
-.modulo-login,
 .modulo {
   margin: 60px auto 60px auto;
   padding-bottom: 40px;
   width: 100%;
 }
-.modulo-login hr,
+.modulo.modulo-login .grupo-formulario {
+  padding: 35px 70px;
+}
 .modulo hr {
   box-shadow: none;
   border-color: #c2c4ba;
 }
-.modulo-login .modulo-encabezado,
 .modulo .modulo-encabezado {
   display: inline-block;
   width: 100%;
   margin-bottom: 10px;
 }
-.modulo-login .modulo-cuerpo label,
-.modulo .modulo-cuerpo label {
-  text-align: right;
-  display: inline-block;
-  margin-right: 0;
-}
-.modulo-login .modulo-cuerpo .checkbox label,
-.modulo .modulo-cuerpo .checkbox label {
-  text-align: left;
-}
-.modulo-login .modulo-cuerpo .checkbox label span,
-.modulo .modulo-cuerpo .checkbox label span {
-  font-size: 13px;
-  display: inline;
-}
-.modulo-login .modulo-cuerpo .control,
-.modulo .modulo-cuerpo .control,
-.modulo-login .modulo-cuerpo select,
-.modulo .modulo-cuerpo select {
-  height: 45px;
-  margin-bottom: 0;
-}
-.modulo-login .modulo-cuerpo select,
-.modulo .modulo-cuerpo select {
-  font-size: 17px;
-}
-.modulo-login .modulo-cuerpo .fila,
 .modulo .modulo-cuerpo .fila {
   margin-bottom: 20px;
 }
-.modulo-login .modulo-cuerpo .fila:last-child,
 .modulo .modulo-cuerpo .fila:last-child {
   margin-bottom: 0;
 }
-.modulo-login .modulo-pie,
 .modulo .modulo-pie {
   padding-bottom: 20px;
 }
@@ -21835,6 +21806,9 @@ form {
     transform: scale(0.9);
     transform-origin: 0px 195px 0px;
     float: left;
+  }
+  .modulo.modulo-login .grupo-formulario {
+    padding: 10px;
   }
   .contenedor-modulo {
     padding: 15px;
@@ -22004,6 +21978,22 @@ form input {
 }
 form .button {
   font-size: 16px;
+}
+form .checkbox label {
+  display: inline-block;
+  text-align: left;
+}
+form .checkbox label span {
+  font-size: 13px;
+  display: inline;
+}
+form .control,
+form select {
+  height: 45px !important;
+  margin-bottom: 0;
+}
+form select {
+  font-size: 17px;
 }
 .tooltip {
   position: absolute;
