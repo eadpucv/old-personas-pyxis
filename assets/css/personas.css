@@ -21546,6 +21546,20 @@ footer p {
   color: #c2c4ba;
   font-weight: 300;
 }
+.nav-tabs li {
+  background-color: transparent;
+  border-bottom-color: transparent;
+}
+.nav-tabs li:hover {
+  background-color: transparent !important;
+}
+.nav-tabs li:hover a {
+  background-color: transparent !important;
+}
+.nav-tabs li.active a,
+.nav-tabs li.active a:active {
+  background-color: transparent;
+}
 .modulo {
   margin: 60px auto 60px auto;
   padding-bottom: 40px;
