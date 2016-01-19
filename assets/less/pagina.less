@@ -106,6 +106,10 @@ form {
 	border-collapse: separate;
 	width: 100%;
 	margin-bottom: 80px;
+	a {
+		margin: 0;
+		font-weight: 700;
+	}
 	thead, tfoot {
 		tr{
 			border-bottom: 1px solid blue;
@@ -115,10 +119,11 @@ form {
 			.sans;
 			color: @rojo;
 			.grueso;
+			.condensado;
 			padding: 4.8px;
-			&:last-child {
-				text-align: right;
-			}
+			// &:last-child {
+			// 	text-align: right;
+			// }
 			ul {
 				margin: 0;
 				padding: 0;
@@ -144,18 +149,30 @@ form {
 		td {
 			font-size: 14px;
 			a {
-				margin-right: 5px;
+				// margin-right: 5px;
+				line-height: 0;
 			}
 			&:first-child i {
 				visibility: hidden;
 			}
-			&:last-child {
-				input[type="checkbox"] {
-					// float: right;
-					display: block;
+			ul {
+				margin: 0;
+				padding: 0;
+				display: -webkit-flex;
+			    display: flex;
+				li {
+					float: left;
+					list-style: none;
 					margin: auto;
 				}
 			}
+			// &:last-child {
+			// 	input[type="checkbox"] {
+			// 		// float: right;
+			// 		display: block;
+			// 		margin: auto;
+			// 	}
+			// }
 		}
 	}
 }
@@ -285,12 +302,15 @@ form {
    .navbar-collapse.collapse {
     	display: block;
     }
+    .contenedor-modulo {
+		max-width: 980px;
+	}
 }
 
 // Large screen / wide desktop
 @media (min-width: @screen-lg){
     .contenedor-modulo {
-		max-width: 980px;
+		max-width: 1180px;
 	}
 	.navbar-collapse.collapse {
     	display: block;

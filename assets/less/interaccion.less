@@ -2,6 +2,9 @@
 .btn-bloque {
 	width: 100%;
 }
+button.btn-lg, button.btn.btn-lg, input.btn-lg[type="submit"], a.btn.btn-lg {
+	font-size: 21px;
+}
 button.btn-facebook, button.btn-twitter, button.btn-google {
 	margin-top: 0;
 	color: #fff;
@@ -37,6 +40,16 @@ button.btn-google {
 	&:hover {
 		background-color: darken(#dd4b39, 10%);
 	}
+}
+.btn-accion-hover:hover{
+    color: @blanco !important;
+    text-shadow: 1px 1px 0 fade(@negro, 40%);
+    background-color: @verde !important;
+}
+.btn-alerta-hover:hover{
+    color: @blanco !important;
+    text-shadow: 1px 1px 0 fade(@negro, 40%);
+    background-color:  @rojo-alerta !important;
 }
 input, select {
 	&:focus {
@@ -133,6 +146,45 @@ form {
 	select {
 		font-size: 17px;
 	}
+}
+label {
+	letter-spacing: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	font-family: @sans;
+	text-transform: none;
+	color: @rojo;
+	.fino;
+	.margen-inf-xs;
+}
+input {
+	color: @gris !important;
+}
+.button {
+	font-size: 16px;
+}
+// label {
+// 	// text-align: right;
+// 	display: inline-block;
+// 	margin-right: 0;
+// }
+.checkbox label {
+	display: inline-block;
+	text-align: left;
+	span {
+		font-size: 13px;
+		display: inline;
+	}
+}
+.input, input.control {
+	margin: 0;
+}
+.control, select, .grupo-inputs .input {
+	height: 45px !important;
+	margin-bottom: 0;
+}
+select {
+	font-size: 17px;
 }
 
 .tooltip {
@@ -306,6 +358,29 @@ form {
 		input, .control, select {
 			font-size: 19px;
 		}
+	}
+
+	table, .tabla-personas {
+		th {
+			font-size: 20px;
+		}
+		tr  {
+			padding: 10px;
+		}
+		tbody {
+			td {
+				font-size: 17px;
+				padding: 5px 5px;
+				a, a.btn {
+					font-size: 17px;
+					padding: 5px;
+				}
+			}
+		}
+		td {
+			font-size: 17px;
+		}
+
 	}
 
 	.nav-icn {

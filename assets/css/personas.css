@@ -21604,6 +21604,10 @@ form {
   width: 100%;
   margin-bottom: 80px;
 }
+.tabla-personas a {
+  margin: 0;
+  font-weight: 700;
+}
 .tabla-personas thead tr,
 .tabla-personas tfoot tr {
   border-bottom: 1px solid blue;
@@ -21614,11 +21618,8 @@ form {
   font-family: 'Source Sans Pro' !important;
   color: #a84744;
   font-weight: 700;
+  font-family: 'Open Sans Condensed' !important;
   padding: 4.8px;
-}
-.tabla-personas thead th:last-child,
-.tabla-personas tfoot th:last-child {
-  text-align: right;
 }
 .tabla-personas thead th ul,
 .tabla-personas tfoot th ul {
@@ -21645,13 +21646,20 @@ form {
   font-size: 14px;
 }
 .tabla-personas tbody td a {
-  margin-right: 5px;
+  line-height: 0;
 }
 .tabla-personas tbody td:first-child i {
   visibility: hidden;
 }
-.tabla-personas tbody td:last-child input[type="checkbox"] {
-  display: block;
+.tabla-personas tbody td ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-flex;
+  display: flex;
+}
+.tabla-personas tbody td ul li {
+  float: left;
+  list-style: none;
   margin: auto;
 }
 .g-recaptcha {
@@ -21757,10 +21765,13 @@ form {
   .navbar-collapse.collapse {
     display: block;
   }
+  .contenedor-modulo {
+    max-width: 980px;
+  }
 }
 @media (min-width: 1445px) {
   .contenedor-modulo {
-    max-width: 980px;
+    max-width: 1180px;
   }
   .navbar-collapse.collapse {
     display: block;
@@ -21785,6 +21796,12 @@ form {
 }
 .btn-bloque {
   width: 100%;
+}
+button.btn-lg,
+button.btn.btn-lg,
+input.btn-lg[type="submit"],
+a.btn.btn-lg {
+  font-size: 21px;
 }
 button.btn-facebook,
 button.btn-twitter,
@@ -21828,6 +21845,16 @@ button.btn-google {
 }
 button.btn-google:hover {
   background-color: #c23321;
+}
+.btn-accion-hover:hover {
+  color: #FFFFFF !important;
+  text-shadow: 1px 1px 0 rgba(1, 1, 1, 0.4);
+  background-color: #76a127 !important;
+}
+.btn-alerta-hover:hover {
+  color: #FFFFFF !important;
+  text-shadow: 1px 1px 0 rgba(1, 1, 1, 0.4);
+  background-color: #d66152 !important;
 }
 input:focus,
 select:focus {
@@ -21906,6 +21933,43 @@ form select {
   margin-bottom: 0;
 }
 form select {
+  font-size: 17px;
+}
+label {
+  letter-spacing: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: 'Source Sans Pro';
+  text-transform: none;
+  color: #a84744;
+  font-weight: 200;
+  margin-bottom: 5px;
+}
+input {
+  color: #575851 !important;
+}
+.button {
+  font-size: 16px;
+}
+.checkbox label {
+  display: inline-block;
+  text-align: left;
+}
+.checkbox label span {
+  font-size: 13px;
+  display: inline;
+}
+.input,
+input.control {
+  margin: 0;
+}
+.control,
+select,
+.grupo-inputs .input {
+  height: 45px !important;
+  margin-bottom: 0;
+}
+select {
   font-size: 17px;
 }
 .tooltip {
@@ -22061,6 +22125,30 @@ form select {
   form .control,
   form select {
     font-size: 19px;
+  }
+  table th,
+  .tabla-personas th {
+    font-size: 20px;
+  }
+  table tr,
+  .tabla-personas tr {
+    padding: 10px;
+  }
+  table tbody td,
+  .tabla-personas tbody td {
+    font-size: 17px;
+    padding: 5px 5px;
+  }
+  table tbody td a,
+  .tabla-personas tbody td a,
+  table tbody td a.btn,
+  .tabla-personas tbody td a.btn {
+    font-size: 17px;
+    padding: 5px;
+  }
+  table td,
+  .tabla-personas td {
+    font-size: 17px;
   }
   .nav-icn {
     visibility: visible;
