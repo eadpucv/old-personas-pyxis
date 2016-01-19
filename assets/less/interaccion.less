@@ -1,4 +1,21 @@
 // Pasar esto a Pyxis:
+
+// Auxiliar
+.sin-margen-izq {
+	margin-left: 0 !important;
+}
+.sin-margen-der {
+	margin-right: 0 !important;
+}
+.sin-margen-sup {
+	margin-top: 0 !important;
+}
+.sin-margen-inf {
+	margin-bottom: 0 !important;
+}
+// Interacción
+
+
 .btn-bloque {
 	width: 100%;
 }
@@ -314,6 +331,27 @@ select {
 		}
 	}
 }
+.paginacion {
+	text-align: center;
+	li {
+		margin-right: 5px;
+		display: inline-block;
+		a {
+			padding: 5px 10px;
+		}
+	}
+	.activo {
+		background-color: @rojo;
+		color: #fff;
+		a {
+			color: #fff !important;
+		}
+		&:hover a {
+			background-color: @rojo;
+			color: #fff !important;
+		}
+	}
+}
 
 // --------------------------------------------------
 // diseño de utilidad responsive
@@ -337,6 +375,24 @@ select {
 			font-size: 12px;
 		}
 	}
+	table, .tabla-personas {
+		th {
+			font-size: 14px;
+		}
+
+		tbody {
+			td {
+				font-size: 12px;
+				a, a.btn {
+					font-size: 12px;
+				}
+			}
+		}
+		td {
+			font-size: 12px;
+		}
+
+	}
 }
 
 // Medium screen / desktop
@@ -345,6 +401,29 @@ select {
 		label {
 			font-size: 14px;
 		}
+	}
+
+	table, .tabla-personas {
+		th {
+			font-size: 16px;
+		}
+		tr  {
+			padding: 10px;
+		}
+		tbody {
+			td {
+				font-size: 14px;
+				padding: 5px 5px;
+				a, a.btn {
+					font-size: 14px;
+					padding: 5px;
+				}
+			}
+		}
+		td {
+			font-size: 14px;
+		}
+
 	}
 
 }

@@ -21794,6 +21794,18 @@ form {
     font-size: 20px;
   }
 }
+.sin-margen-izq {
+  margin-left: 0 !important;
+}
+.sin-margen-der {
+  margin-right: 0 !important;
+}
+.sin-margen-sup {
+  margin-top: 0 !important;
+}
+.sin-margen-inf {
+  margin-bottom: 0 !important;
+}
 .btn-bloque {
   width: 100%;
 }
@@ -22099,6 +22111,27 @@ select {
 .bloque-perfil .cabecera img {
   width: 100%;
 }
+.paginacion {
+  text-align: center;
+}
+.paginacion li {
+  margin-right: 5px;
+  display: inline-block;
+}
+.paginacion li a {
+  padding: 5px 10px;
+}
+.paginacion .activo {
+  background-color: #a84744;
+  color: #fff;
+}
+.paginacion .activo a {
+  color: #fff !important;
+}
+.paginacion .activo:hover a {
+  background-color: #a84744;
+  color: #fff !important;
+}
 @media (max-width: 767px) {
   form label {
     font-size: 11px;
@@ -22111,9 +22144,51 @@ select {
   form label {
     font-size: 12px;
   }
+  table th,
+  .tabla-personas th {
+    font-size: 14px;
+  }
+  table tbody td,
+  .tabla-personas tbody td {
+    font-size: 12px;
+  }
+  table tbody td a,
+  .tabla-personas tbody td a,
+  table tbody td a.btn,
+  .tabla-personas tbody td a.btn {
+    font-size: 12px;
+  }
+  table td,
+  .tabla-personas td {
+    font-size: 12px;
+  }
 }
 @media (min-width: 992px) and (max-width: 1444px) {
   form label {
+    font-size: 14px;
+  }
+  table th,
+  .tabla-personas th {
+    font-size: 16px;
+  }
+  table tr,
+  .tabla-personas tr {
+    padding: 10px;
+  }
+  table tbody td,
+  .tabla-personas tbody td {
+    font-size: 14px;
+    padding: 5px 5px;
+  }
+  table tbody td a,
+  .tabla-personas tbody td a,
+  table tbody td a.btn,
+  .tabla-personas tbody td a.btn {
+    font-size: 14px;
+    padding: 5px;
+  }
+  table td,
+  .tabla-personas td {
     font-size: 14px;
   }
 }
