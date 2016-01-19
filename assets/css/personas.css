@@ -21546,48 +21546,30 @@ footer p {
   color: #c2c4ba;
   font-weight: 300;
 }
-.modulo-login {
+.modulo {
   margin: 60px auto 60px auto;
   padding-bottom: 40px;
   width: 100%;
 }
-.modulo-login hr {
-  padding-top: 25px;
+.modulo.modulo-login .grupo-formulario {
+  padding: 35px 70px;
+}
+.modulo hr {
   box-shadow: none;
   border-color: #c2c4ba;
 }
-.modulo-login .modulo-encabezado {
+.modulo .modulo-encabezado {
   display: inline-block;
   width: 100%;
   margin-bottom: 10px;
 }
-.modulo-login .modulo-cuerpo label {
-  text-align: right;
-  display: inline-block;
-  margin-right: 0;
-}
-.modulo-login .modulo-cuerpo .checkbox label {
-  text-align: left;
-}
-.modulo-login .modulo-cuerpo .checkbox label span {
-  font-size: 13px;
-  display: inline;
-}
-.modulo-login .modulo-cuerpo .control,
-.modulo-login .modulo-cuerpo select {
-  height: 45px;
-  margin-bottom: 0;
-}
-.modulo-login .modulo-cuerpo select {
-  font-size: 17px;
-}
-.modulo-login .modulo-cuerpo .fila {
+.modulo .modulo-cuerpo .fila {
   margin-bottom: 20px;
 }
-.modulo-login .modulo-cuerpo .fila:last-child {
+.modulo .modulo-cuerpo .fila:last-child {
   margin-bottom: 0;
 }
-.modulo-login .modulo-pie {
+.modulo .modulo-pie {
   padding-bottom: 20px;
 }
 .contenedor-modulo {
@@ -21622,6 +21604,10 @@ form {
   width: 100%;
   margin-bottom: 80px;
 }
+.tabla-personas a {
+  margin: 0;
+  font-weight: 700;
+}
 .tabla-personas thead tr,
 .tabla-personas tfoot tr {
   border-bottom: 1px solid blue;
@@ -21632,11 +21618,8 @@ form {
   font-family: 'Source Sans Pro' !important;
   color: #a84744;
   font-weight: 700;
+  font-family: 'Open Sans Condensed' !important;
   padding: 4.8px;
-}
-.tabla-personas thead th:last-child,
-.tabla-personas tfoot th:last-child {
-  text-align: right;
 }
 .tabla-personas thead th ul,
 .tabla-personas tfoot th ul {
@@ -21663,13 +21646,20 @@ form {
   font-size: 14px;
 }
 .tabla-personas tbody td a {
-  margin-right: 5px;
+  line-height: 0;
 }
 .tabla-personas tbody td:first-child i {
   visibility: hidden;
 }
-.tabla-personas tbody td:last-child input[type="checkbox"] {
-  display: block;
+.tabla-personas tbody td ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-flex;
+  display: flex;
+}
+.tabla-personas tbody td ul li {
+  float: left;
+  list-style: none;
   margin: auto;
 }
 .g-recaptcha {
@@ -21678,22 +21668,56 @@ form {
   height: 110px;
   float: right;
 }
-.menu-pyxis .navbar-toggle {
+.menu-nav .navbar-toggle {
   display: none;
 }
+.menu-nav {
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Source Sans Pro';
+}
+.menu-nav .nav-rotulos {
+  float: right;
+}
+.menu-nav .nav-rotulos li a {
+  padding: 16px 19.2px;
+  margin: 0;
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+}
+.menu-nav .nav-rotulos li a i {
+  font-weight: 700;
+  margin-right: 5px;
+}
+.menu-nav .nav-rotulos li a:first-child {
+  margin-left: 0;
+}
+.menu-nav .nav-rotulos li a.last-child {
+  margin-right: 0;
+}
+.menu-nav h6 {
+  display: inline-block;
+  margin: 15px 5px;
+  padding: 0;
+}
+.menu-nav span {
+  padding: 0;
+  margin: 0 0 0 3px;
+  letter-spacing: 0.015625em;
+}
 @media (max-width: 767px) {
-  .menu-pyxis {
+  .menu-nav {
     padding: 0 10px;
     width: 100%;
     display: inline-block;
   }
-  .menu-pyxis .navbar-toggle {
+  .menu-nav .navbar-toggle {
     float: right;
     display: -webkit-flex;
     display: flex;
     height: 57px;
   }
-  .menu-pyxis .navbar-toggle i {
+  .menu-nav .navbar-toggle i {
     margin: auto;
   }
   .flexbox {
@@ -21703,6 +21727,9 @@ form {
     transform: scale(0.9);
     transform-origin: 0px 195px 0px;
     float: left;
+  }
+  .modulo.modulo-login .grupo-formulario {
+    padding: 10px;
   }
   .contenedor-modulo {
     padding: 15px;
@@ -21738,10 +21765,13 @@ form {
   .navbar-collapse.collapse {
     display: block;
   }
+  .contenedor-modulo {
+    max-width: 980px;
+  }
 }
 @media (min-width: 1445px) {
   .contenedor-modulo {
-    max-width: 980px;
+    max-width: 1180px;
   }
   .navbar-collapse.collapse {
     display: block;
@@ -21764,24 +21794,46 @@ form {
     font-size: 20px;
   }
 }
+.sin-margen-izq {
+  margin-left: 0 !important;
+}
+.sin-margen-der {
+  margin-right: 0 !important;
+}
+.sin-margen-sup {
+  margin-top: 0 !important;
+}
+.sin-margen-inf {
+  margin-bottom: 0 !important;
+}
 .btn-bloque {
   width: 100%;
 }
+button.btn-lg,
+button.btn.btn-lg,
+input.btn-lg[type="submit"],
+a.btn.btn-lg {
+  font-size: 21px;
+}
 button.btn-facebook,
-button.btn-twitter {
+button.btn-twitter,
+button.btn-google {
   margin-top: 0;
   color: #fff;
 }
 button.btn-facebook:hover,
-button.btn-twitter:hover {
+button.btn-twitter:hover,
+button.btn-google:hover {
   color: #fff;
 }
 button.btn-facebook:active,
-button.btn-twitter:active {
+button.btn-twitter:active,
+button.btn-google:active {
   margin: 0 auto 15px auto;
 }
 button.btn-facebook.btn-deshabilitado,
-button.btn-twitter.btn-deshabilitado {
+button.btn-twitter.btn-deshabilitado,
+button.btn-google.btn-deshabilitado {
   background-color: #999;
 }
 button.btn-deshabilitado,
@@ -21799,6 +21851,22 @@ button.btn-twitter {
 }
 button.btn-twitter:hover {
   background-color: #0087ba;
+}
+button.btn-google {
+  background-color: #dd4b39;
+}
+button.btn-google:hover {
+  background-color: #c23321;
+}
+.btn-accion-hover:hover {
+  color: #FFFFFF !important;
+  text-shadow: 1px 1px 0 rgba(1, 1, 1, 0.4);
+  background-color: #76a127 !important;
+}
+.btn-alerta-hover:hover {
+  color: #FFFFFF !important;
+  text-shadow: 1px 1px 0 rgba(1, 1, 1, 0.4);
+  background-color: #d66152 !important;
 }
 input:focus,
 select:focus {
@@ -21838,7 +21906,10 @@ select:focus {
   display: table-cell;
 }
 .grupo-inputs select {
-  border-radius: 0 !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-border-radius: 0px;
+  border-radius: 0px !important;
   margin-left: 0px !important;
 }
 .grupo-inputs :last-child {
@@ -21859,6 +21930,59 @@ form input {
 }
 form .button {
   font-size: 16px;
+}
+form .checkbox label {
+  display: inline-block;
+  text-align: left;
+}
+form .checkbox label span {
+  font-size: 13px;
+  display: inline;
+}
+form .control,
+form select {
+  height: 45px !important;
+  margin-bottom: 0;
+}
+form select {
+  font-size: 17px;
+}
+label {
+  letter-spacing: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: 'Source Sans Pro';
+  text-transform: none;
+  color: #a84744;
+  font-weight: 200;
+  margin-bottom: 5px;
+}
+input {
+  color: #575851 !important;
+}
+.button {
+  font-size: 16px;
+}
+.checkbox label {
+  display: inline-block;
+  text-align: left;
+}
+.checkbox label span {
+  font-size: 13px;
+  display: inline;
+}
+.input,
+input.control {
+  margin: 0;
+}
+.control,
+select,
+.grupo-inputs .input {
+  height: 45px !important;
+  margin-bottom: 0;
+}
+select {
+  font-size: 17px;
 }
 .tooltip {
   position: absolute;
@@ -21987,6 +22111,27 @@ form .button {
 .bloque-perfil .cabecera img {
   width: 100%;
 }
+.paginacion {
+  text-align: center;
+}
+.paginacion li {
+  margin-right: 5px;
+  display: inline-block;
+}
+.paginacion li a {
+  padding: 5px 10px;
+}
+.paginacion .activo {
+  background-color: #a84744;
+  color: #fff;
+}
+.paginacion .activo a {
+  color: #fff !important;
+}
+.paginacion .activo:hover a {
+  background-color: #a84744;
+  color: #fff !important;
+}
 @media (max-width: 767px) {
   form label {
     font-size: 11px;
@@ -21999,9 +22144,51 @@ form .button {
   form label {
     font-size: 12px;
   }
+  table th,
+  .tabla-personas th {
+    font-size: 14px;
+  }
+  table tbody td,
+  .tabla-personas tbody td {
+    font-size: 12px;
+  }
+  table tbody td a,
+  .tabla-personas tbody td a,
+  table tbody td a.btn,
+  .tabla-personas tbody td a.btn {
+    font-size: 12px;
+  }
+  table td,
+  .tabla-personas td {
+    font-size: 12px;
+  }
 }
 @media (min-width: 992px) and (max-width: 1444px) {
   form label {
+    font-size: 14px;
+  }
+  table th,
+  .tabla-personas th {
+    font-size: 16px;
+  }
+  table tr,
+  .tabla-personas tr {
+    padding: 10px;
+  }
+  table tbody td,
+  .tabla-personas tbody td {
+    font-size: 14px;
+    padding: 5px 5px;
+  }
+  table tbody td a,
+  .tabla-personas tbody td a,
+  table tbody td a.btn,
+  .tabla-personas tbody td a.btn {
+    font-size: 14px;
+    padding: 5px;
+  }
+  table td,
+  .tabla-personas td {
     font-size: 14px;
   }
 }
@@ -22013,6 +22200,30 @@ form .button {
   form .control,
   form select {
     font-size: 19px;
+  }
+  table th,
+  .tabla-personas th {
+    font-size: 20px;
+  }
+  table tr,
+  .tabla-personas tr {
+    padding: 10px;
+  }
+  table tbody td,
+  .tabla-personas tbody td {
+    font-size: 17px;
+    padding: 5px 5px;
+  }
+  table tbody td a,
+  .tabla-personas tbody td a,
+  table tbody td a.btn,
+  .tabla-personas tbody td a.btn {
+    font-size: 17px;
+    padding: 5px;
+  }
+  table td,
+  .tabla-personas td {
+    font-size: 17px;
   }
   .nav-icn {
     visibility: visible;

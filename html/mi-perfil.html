@@ -16,7 +16,7 @@
 <body>
 	<div class="fondo-header-pyxis">
 		<div class="pag sin-relleno menu">
-			<nav class='menu-pyxis'>
+			<nav class='menu-nav'>
 				<a href='personas.html'>
 			    	<div class='logo-pyxis'>
 			        	<h6 class='gruesa sans rojo no-responsivo'>
@@ -30,35 +30,22 @@
 			  	<ul class="nav-rotulos nav nav-pills collapse navbar-collapse" id="bs-example-navbar-collapse-2">
 				    <li><a href='mi-perfil.html'><i class="icn icn-usuario"></i> Mi perfil</a></li>
 				    <li><a href='editar.html'><i class="icn icn-lapiz"></i> Editar cuenta</a></li>
-				    <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" id="drop4" class="dropdown-toggle"><i class="icn icn-engranaje"></i> Administración<i class="icn icn-caronabajo "></i></a>
-					    <ul aria-labelledby="drop4" role="menu" class="dropdown-menu" id="menu1">
-							<li role="presentation"><a href="administracion.html#usuarios" tabindex="-1" role="menuitem"><i class="icn icn-lupa"></i> Buscar Usuarios e[ad]</a></li>
-							<li role="presentation"><a href="administracion.html#bloqueados" tabindex="-1" role="menuitem"><i class="icn icn-prohibir"></i> Usuarios Bloqueados</a></li>
-							<li role="presentation"><a href="administracion.html#filtrar" tabindex="-1" role="menuitem"><i class="icn icn-rama"></i> Filtrar</a></li>
-							<li role="presentation"><a href="registro.html" tabindex="-1" role="menuitem"><i class="icn icn-usuariomas"></i> Nuevo usuario</a></li>
-					    </ul>
-				  	</li>
 			    	<li><a href='ingresar.html'><i class="icn icn-salir"></i> Cerrar sesión</a></li>
 			  	</ul>
 			</nav> 	
 		</div>
-	</div> 
-	<section class="modulo-login">
+	</div>
+	<section class="modulo">
 		<div class="modulo-cuerpo">
-			<div class="fondo-blanco margen-inf-sm">
-				<div class="contenedor-modulo">
-					<i class="icn icn-perfil rojo margen-der-sm nav-icn"></i> 
-					<ul class="nav nav-tabs" role="tablist">
-	                    <li class="active"><a><h5 class="rojo sin-margen">Mi perfil</h5></a></li>
-	                </ul>
-				</div>
-			</div>
 			<div class="contenedor-modulo">
 				<div class="tab-content margen-sup">
-		            	<form>
-	            		<div class="col-md-6 col-sm-6 col-xs-12">
-							<h3 class="fino sans pizarra">Perfil</h3>
+		            <form>
+		            	<div class="col-md-12 col-sm-12 col-xs-12">
+		            		<h3 class="fino sans rojo"><i class="icn icn-perfil nav-icn"></i> Mi Perfil público</h3>
+		            		<h6 class="xs">Datos obtenidos de Wiki Casiopea: <a href="http://wiki.ead.pucv.cl/index.php/Idar_Gonz%C3%A1lez">http://wiki.ead.pucv.cl/index.php/Idar_Gonz%C3%A1lez</a></h6>
 							<hr>
+		            	</div>
+	            		<div class="col-md-6 col-sm-6 col-xs-12">
 							<div class="margen-inf-sm">
 								<div class="bloque-perfil">
 									<div class="cabecera">
@@ -66,59 +53,40 @@
 									</div>
 									<h3>Juan Pérez</h3>
 									<h6>Biografía de Juan pérez</h6>
-									<a href="#">Sitiowebdejuanperez.com</a>
+									<p>Sitio web: <a href="#">Sitiowebdejuanperez.com</a></p>
 								</div>
 								
 							</div>
 							
 						</div>
 						<div class="col-md-6 col-sm-6 col-xs-12">
-							<h3 class="fino sans pizarra">Tus datos personales</h3>
-							<hr>
 							<div class="margen-inf-sm">
 								<label for="name">Grado académico</label>
-								<div class="grupo-inputs">		
-							        <div class="input"><i class="icn icn-md icn-perfil"></i></div>
-							        <input type="text" class="control" id="name" value="Licenciado" readonly />	
-							    </div>
+								<p>Licenciado</p>
 							</div>
 							<div class="margen-inf-sm">
 								<label for="year">Fecha de nacimiento</label>
-								<div class="grupo-inputs">
-							        <div class="input"><i class="icn icn-md icn-calendario"></i></div>
-							        <input type="text" class="control" id="year" value="1989/12/03" readonly />	
-							    </div>
+								<p>1989/12/03</p>
 							</div>
 							<div class="margen-inf-sm">
 								<label for="year">Ingreso</label>
-								<div class="grupo-inputs">
-							        <div class="input"><i class="icn icn-md icn-ingresar"></i></div>
-							        <input type="text" class="control" id="year" value="2010" readonly />	
-							    </div>
+								<p>2010</p>
 							</div>
 							<div class="margen-inf-sm">
 								<label for="lastname">Ciudad y país</label>
-								<div class="grupo-inputs">
-							        <div class="input"><i class="icn icn-md icn-mapa"></i></div>
-							        <input type="text" class="control" id="year" value="Valparaíso, Chile" readonly />	
-							    </div>
+								<p>Valparaíso, Chile</p>
 							</div>
 							<div class="margen-inf-sm">
 								<label for="lastname">Relación con la e[ad]</label>
-								<div class="grupo-inputs">
-							        <div class="input"><i class="icn icn-md icn-hogar"></i></div>
-							        <input type="text" class="control" id="year" value="Ex-alumno" readonly />	
-							    </div>
+								<p>Ex-alumno</p>
 							</div>
 							<div class="margen-inf-sm">
 								<label for="lastname">Carrera</label>
-								<div class="grupo-inputs">
-							        <div class="input"><i class="icn icn-md icn-libro"></i></div>
-							        <input type="text" class="control" id="year" value="Diseño gráfico" readonly />	
-							    </div>
+								<p>Diseño gráfico</p>
 							</div>
 							<div class="margen-inf-sm">
-								<a href="http://wiki.ead.pucv.cl/index.php/Idar_Gonz%C3%A1lez" class="btn btn-accion btn-lg btn-bloque">Editar en Wiki Casiopea</a>
+								<a href="http://wiki.ead.pucv.cl/index.php?title=Idar_Gonz%C3%A1lez&action=edit" class="btn btn-accion btn-lg btn-bloque">Editar en Wiki Casiopea</a>
+								<a class="xs centrado sin-margen bloque" href="http://wiki.ead.pucv.cl/index.php/Idar_Gonz%C3%A1lez">ir a Perfil Wiki Casiopea</a>
 							</div>
 						</div>
 					</form>

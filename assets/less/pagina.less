@@ -36,12 +36,14 @@ footer {
     font-weight: 300;
 }
 
-.modulo-login {
+.modulo {
 	margin: 60px auto 60px auto;
 	padding-bottom: 40px;
 	width: 100%;
+	&.modulo-login .grupo-formulario{
+		padding: 35px 70px;
+	}
 	hr {
-		padding-top: 25px;
 		box-shadow: none;
 		border-color: @gris-claro;
 	}
@@ -52,25 +54,6 @@ footer {
 		margin-bottom: 10px;
 	}
 	.modulo-cuerpo {
-		label {
-			text-align: right;
-			display: inline-block;
-			margin-right: 0;
-		}
-		.checkbox label {
-			text-align: left;
-			span {
-				font-size: 13px;
-				display: inline;
-			}
-		}
-		.control, select {
-			height: 45px;
-			margin-bottom: 0;
-		}
-		select {
-			font-size: 17px;
-		}
 		.fila {
 			margin-bottom: 20px;
 			&:last-child {
@@ -123,6 +106,10 @@ form {
 	border-collapse: separate;
 	width: 100%;
 	margin-bottom: 80px;
+	a {
+		margin: 0;
+		font-weight: 700;
+	}
 	thead, tfoot {
 		tr{
 			border-bottom: 1px solid blue;
@@ -132,10 +119,11 @@ form {
 			.sans;
 			color: @rojo;
 			.grueso;
+			.condensado;
 			padding: 4.8px;
-			&:last-child {
-				text-align: right;
-			}
+			// &:last-child {
+			// 	text-align: right;
+			// }
 			ul {
 				margin: 0;
 				padding: 0;
@@ -161,18 +149,30 @@ form {
 		td {
 			font-size: 14px;
 			a {
-				margin-right: 5px;
+				// margin-right: 5px;
+				line-height: 0;
 			}
 			&:first-child i {
 				visibility: hidden;
 			}
-			&:last-child {
-				input[type="checkbox"] {
-					// float: right;
-					display: block;
+			ul {
+				margin: 0;
+				padding: 0;
+				display: -webkit-flex;
+			    display: flex;
+				li {
+					float: left;
+					list-style: none;
 					margin: auto;
 				}
 			}
+			// &:last-child {
+			// 	input[type="checkbox"] {
+			// 		// float: right;
+			// 		display: block;
+			// 		margin: auto;
+			// 	}
+			// }
 		}
 	}
 }
@@ -192,15 +192,51 @@ form {
 @ruta-pyxis: '..';
 @ruta-tipografias: '../fonts';
 
-.menu-pyxis {
+.menu-nav {
 	.navbar-toggle {
 		display: none;
 	}
 }
 
+.menu-nav {
+    margin: 0 auto;
+    padding: 0;     
+    padding: 0;  
+    font-family: @sans;
+
+    .nav-rotulos {
+      float: right;
+
+      li a {
+        padding: @cuerpo @cuerpo * 1.2;// 17px 21px;
+        margin: 0;
+        font-family: @sans;
+        font-weight: 300;
+        i {
+        	font-weight: 700;
+        	margin-right: 5px;
+        }
+        &:first-child{margin-left: 0}
+        &.last-child{margin-right: 0}
+      }
+   }        
+
+    h6{
+      display: inline-block;
+      margin: 15px 5px;
+      padding: 0;
+    }
+
+    span {
+      padding: 0;
+      margin: 0 0 0 3px;
+      letter-spacing: .25/@em;
+    }
+}
+
   //  Extra-small screen / Phones
 @media(max-width: @screen-xs-max){
-	.menu-pyxis {
+	.menu-nav {
 		padding: 0 10px;
 		width: 100%;
 		display: inline-block;
@@ -222,6 +258,9 @@ form {
     	transform: scale(0.9);
 		transform-origin: 0px 195px 0px;
 		float: left;
+	}
+	.modulo.modulo-login .grupo-formulario{
+		padding: 10px;
 	}
 	.contenedor-modulo {
 		padding: 15px;
@@ -263,12 +302,15 @@ form {
    .navbar-collapse.collapse {
     	display: block;
     }
+    .contenedor-modulo {
+		max-width: 980px;
+	}
 }
 
 // Large screen / wide desktop
 @media (min-width: @screen-lg){
     .contenedor-modulo {
-		max-width: 980px;
+		max-width: 1180px;
 	}
 	.navbar-collapse.collapse {
     	display: block;

@@ -1,10 +1,28 @@
 // Pasar esto a Pyxis:
+
+// Auxiliar
+.sin-margen-izq {
+	margin-left: 0 !important;
+}
+.sin-margen-der {
+	margin-right: 0 !important;
+}
+.sin-margen-sup {
+	margin-top: 0 !important;
+}
+.sin-margen-inf {
+	margin-bottom: 0 !important;
+}
+// Interacción
+
+
 .btn-bloque {
 	width: 100%;
 }
-
-
-button.btn-facebook, button.btn-twitter {
+button.btn-lg, button.btn.btn-lg, input.btn-lg[type="submit"], a.btn.btn-lg {
+	font-size: 21px;
+}
+button.btn-facebook, button.btn-twitter, button.btn-google {
 	margin-top: 0;
 	color: #fff;
 	&:hover {
@@ -33,6 +51,22 @@ button.btn-twitter {
 	&:hover {
 		background-color: darken(#00aced, 10%);
 	}
+}
+button.btn-google {
+	background-color: #dd4b39;
+	&:hover {
+		background-color: darken(#dd4b39, 10%);
+	}
+}
+.btn-accion-hover:hover{
+    color: @blanco !important;
+    text-shadow: 1px 1px 0 fade(@negro, 40%);
+    background-color: @verde !important;
+}
+.btn-alerta-hover:hover{
+    color: @blanco !important;
+    text-shadow: 1px 1px 0 fade(@negro, 40%);
+    background-color:  @rojo-alerta !important;
 }
 input, select {
 	&:focus {
@@ -74,13 +108,19 @@ input, select {
 		// border-left: none;
 	}
 	select {
-		border-radius: 0 !important;
+		// border:1px solid red;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-webkit-border-radius: 0px;
+		border-radius: 0px !important;
 		margin-left: 0px !important;
 	}
 }
 
+
+
 .grupo-inputs select:last-child {
-	
+	// border:1px solid blue;
 }
 .grupo-inputs :last-child {
 	margin-left: 0;
@@ -103,6 +143,65 @@ form {
 	.button {
 		font-size: 16px;
 	}
+	// label {
+	// 	// text-align: right;
+	// 	display: inline-block;
+	// 	margin-right: 0;
+	// }
+	.checkbox label {
+		display: inline-block;
+		text-align: left;
+		span {
+			font-size: 13px;
+			display: inline;
+		}
+	}
+	.control, select {
+		height: 45px !important;
+		margin-bottom: 0;
+	}
+	select {
+		font-size: 17px;
+	}
+}
+label {
+	letter-spacing: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	font-family: @sans;
+	text-transform: none;
+	color: @rojo;
+	.fino;
+	.margen-inf-xs;
+}
+input {
+	color: @gris !important;
+}
+.button {
+	font-size: 16px;
+}
+// label {
+// 	// text-align: right;
+// 	display: inline-block;
+// 	margin-right: 0;
+// }
+.checkbox label {
+	display: inline-block;
+	text-align: left;
+	span {
+		font-size: 13px;
+		display: inline;
+	}
+}
+.input, input.control {
+	margin: 0;
+}
+.control, select, .grupo-inputs .input {
+	height: 45px !important;
+	margin-bottom: 0;
+}
+select {
+	font-size: 17px;
 }
 
 .tooltip {
@@ -232,6 +331,27 @@ form {
 		}
 	}
 }
+.paginacion {
+	text-align: center;
+	li {
+		margin-right: 5px;
+		display: inline-block;
+		a {
+			padding: 5px 10px;
+		}
+	}
+	.activo {
+		background-color: @rojo;
+		color: #fff;
+		a {
+			color: #fff !important;
+		}
+		&:hover a {
+			background-color: @rojo;
+			color: #fff !important;
+		}
+	}
+}
 
 // --------------------------------------------------
 // diseño de utilidad responsive
@@ -255,6 +375,24 @@ form {
 			font-size: 12px;
 		}
 	}
+	table, .tabla-personas {
+		th {
+			font-size: 14px;
+		}
+
+		tbody {
+			td {
+				font-size: 12px;
+				a, a.btn {
+					font-size: 12px;
+				}
+			}
+		}
+		td {
+			font-size: 12px;
+		}
+
+	}
 }
 
 // Medium screen / desktop
@@ -263,6 +401,29 @@ form {
 		label {
 			font-size: 14px;
 		}
+	}
+
+	table, .tabla-personas {
+		th {
+			font-size: 16px;
+		}
+		tr  {
+			padding: 10px;
+		}
+		tbody {
+			td {
+				font-size: 14px;
+				padding: 5px 5px;
+				a, a.btn {
+					font-size: 14px;
+					padding: 5px;
+				}
+			}
+		}
+		td {
+			font-size: 14px;
+		}
+
 	}
 
 }
@@ -276,6 +437,29 @@ form {
 		input, .control, select {
 			font-size: 19px;
 		}
+	}
+
+	table, .tabla-personas {
+		th {
+			font-size: 20px;
+		}
+		tr  {
+			padding: 10px;
+		}
+		tbody {
+			td {
+				font-size: 17px;
+				padding: 5px 5px;
+				a, a.btn {
+					font-size: 17px;
+					padding: 5px;
+				}
+			}
+		}
+		td {
+			font-size: 17px;
+		}
+
 	}
 
 	.nav-icn {
