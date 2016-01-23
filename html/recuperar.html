@@ -10,7 +10,7 @@
     <script src="../assets/js/modal.js"></script>
 </head>
 <body>
-	<section class="modulo">
+	<section class="modulo modulo-login">
 		<div class="contenedor-modulo">
 			<div class="modulo-encabezado">
 			<h1 class="fino pizarra sin-margen rojo">e[ad]<span class='sans pizarra fino'>Escuela de Arquitectura y Diseño</span></h1>
@@ -24,35 +24,37 @@
 				</div>
 			</div>
 			<div class="contenedor-modulo">
-				<div class="grupo-formulario ">
-					<div class="margen-inf-lg">
-						<div class="col-md-12">
-							<label for="name">Solicitar mediante email</label>
-						</div>
-						<div class="col-md-7 col-sm-7 col-xs-12">
+				<form class="grupo-formulario">
+					<div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+						<div class="margen-inf-lg">
+							<div class="checkbox">
+								<label for="name">Solicitar mediante email</label>
+							</div>
 							<div class="grupo-inputs">
 						        <div class="input"><i class="icn icn-light icn-email"></i></div>
 						        <input type="email" class="control" id="email" placeholder="Ingresa el correo que ya tienes asociado a tu cuenta" />	
 						    </div>
+						    <button type="button" class="btn btn-accion btn-lg btn-bloque btn-abrir-alerta">Solicitar</button>
 						</div>
-						<div class="col-md-5 col-sm-5 col-xs-12">
-							<button type="button" class="btn btn-accion btn-lg btn-bloque sin-margen oculto-xs" data-toggle="modal" data-target="#modalExito">Solicitar</button>
-							<button type="button" class="btn btn-accion btn-lg btn-bloque margen-sup-sm visible-xs" data-toggle="modal" data-target="#modalExito">Solicitar</button>
-						</div>
-					</div>
-					<div class="margen-sup-lg">
-						<div class="col-md-12">
-							<label for="name">Solicitar mediante RUT</label>
-						</div>
-						<div class="col-md-7 col-sm-7 col-xs-12">
+						<div class="margen-inf-sm">
+							<div class="checkbox">
+								<label for="name">Solicitar mediante RUT</label>
+							</div>
 							<div class="grupo-inputs">
 						        <div class="input"><i class="icn icn-light icn-usuario"></i></div>
 						        <input type="email" class="control" id="email" placeholder="Ingresa tu rut si no recuerdas el email" />	
 						    </div>
+						    <button type="button" class="btn btn-accion btn-lg btn-bloque btn-abrir-alerta">Solicitar</button>
 						</div>
-						<div class="col-md-5 col-sm-5 col-xs-12">
-							<button type="button" class="btn btn-accion btn-lg btn-bloque sin-margen oculto-xs" data-toggle="modal" data-target="#modalExito">Solicitar</button>
-							<button type="button" class="btn btn-accion btn-lg btn-bloque margen-sup-sm visible-xs" data-toggle="modal" data-target="#modalExito">Solicitar</button>
+					</div>
+				</form>
+				<div class="fila">
+					<div class="col-md-12">
+						<div class="margen-sup-sm">
+							<div class="alerta alerta-accion alert-dismissible fade in" role="alert">
+							  <button type="button" class="close btn-cerrar-alerta" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							  Te hemos enviado un email con información para recuperar tus datos.
+							</div>
 						</div>
 					</div>
 				</div>
@@ -62,19 +64,15 @@
 	<footer>
 		<p class="centrado xs"><b>Personas</b> es un sistema de registro único (SSO) desarrollado por el <a href="#">.:TIG:.</a> para todos los servicios de la <a href="#">e[ad] Escuela de Arquitectura y Diseño PUCV</a>. </p>
 	</footer>
-	<!-- Modal -->
-	<div class="modal fade helper exito" id="modalExito" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	      <div class="modal-body">
-	      	<i class="icn icn-visto icn-lg"></i> 
-	        <h3 class="sans ">Te hemos enviado un email con información para recuperar tus datos.</h3>
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-accion btn-lg" data-dismiss="modal">Ok, entiendo</button>
-	      </div>
-	    </div>
-	  </div>
-	</div>
 </body>
+<script>
+	$(document).ready(function(){
+	    $('.btn-abrir-alerta').click(function(){
+	        $('.alerta').show()
+	    });
+	    $('.btn-cerrar-alerta').click(function(){
+	        $('.alerta').hide()
+	    }) 
+	});
+</script>
 </html>

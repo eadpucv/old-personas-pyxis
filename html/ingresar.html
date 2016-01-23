@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<script src="../assets/js/jquery.js"></script>
     <script src="../assets/js/transition.js"></script>
-    <script src="../assets/js/modal.js"></script>
+    <script src="../assets/js/alert.js"></script>
 </head>
 <body>
 	<div class="pag">
@@ -16,7 +16,7 @@
 				<div class="modulo-encabezado">
 				<h1 class="fino pizarra sin-margen rojo">e[ad]<span class='sans pizarra fino'>Escuela de Arquitectura y Diseño</span></h1>
 			    <span class='xs bloque izquierda sans negro-fundido en-linea'>Pontificia Universidad Católica de Valparaíso</span>
-			</div>
+				</div>
 			</div>
 			<div class="modulo-cuerpo">
 				<div class="contenedor-modulo">
@@ -35,7 +35,12 @@
 						        <div class="input"><i class="icn icn-light icn-cerrado"></i></div>
 						        <input type="password" class="control" id="password" placeholder="Introduce contraseña" required />	
 						    </div>
-						    <span class="bloque relleno-sup-sm"><a href="#">¿Olvidaste tu contraseña?</a></span>
+						</div>
+						<div class="margen-inf-sm">
+							<div class="alerta alerta-precaucion alert-dismissible fade in" role="alert">
+							  <button type="button" class="close btn-cerrar-alerta" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							  <strong>Error de ingreso!</strong> <a href="recuperar.html">¿Olvidaste tu contraseña?</a>
+							</div>
 						</div>
 						<div class="fila">
 							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -47,7 +52,7 @@
 							</div>
 							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 								<input type="sumbit" hidden value="ir">
-								<a href="personas.html" class="btn btn-accion btn-lg btn-bloque">Iniciar sesión</a>
+								<a class="btn btn-accion btn-lg btn-bloque btn-abrir-alerta">Iniciar sesión</a>
 							</div>
 							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 								<a href="registro.html" class="btn btn-md btn-bloque sin-margen">¿Eres nuevo? Regístrate</a>
@@ -69,19 +74,15 @@
 	<footer>
 		<p class="centrado xs"><b>Personas</b> es un sistema de registro único (SSO) desarrollado por el <a href="#">.:TIG:.</a> para todos los servicios de la <a href="#">e[ad] Escuela de Arquitectura y Diseño PUCV</a>. </p>
 	</footer>
-	<!-- Modal -->
-	<div class="modal fade helper error" id="modalError" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	      <div class="modal-body">
-	      	<i class="icn icn-equis icn-lg"></i> 
-	        <h3 class="sans ">Los datos ingresados no corresponden con nuestra base de datos!</h3>
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-alerta btn-lg" data-dismiss="modal">Ok, entiendo</button>
-	      </div>
-	    </div>
-	  </div>
-	</div>
 </body>
+<script>
+	$(document).ready(function(){
+	    $('.btn-abrir-alerta').click(function(){
+	        $('.alerta').show()
+	    });
+	    $('.btn-cerrar-alerta').click(function(){
+	        $('.alerta').hide()
+	    }) 
+	});
+</script>
 </html>
