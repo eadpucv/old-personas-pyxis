@@ -21688,6 +21688,11 @@ form {
 .change-email {
   display: none;
 }
+.no-data {
+  color: #d66152;
+  font-weight: 700;
+  text-decoration: underline;
+}
 .menu-nav .navbar-toggle {
   display: none;
 }
