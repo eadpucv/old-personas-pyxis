@@ -21680,7 +21680,11 @@ form {
   transform: scale(1.15);
   transform-origin: 300px -70px 0px;
   height: 110px;
-  float: right;
+  margin: 0 auto;
+  width: 300px;
+}
+.bloque-resultado {
+  display: none;
 }
 .menu-nav .navbar-toggle {
   display: none;
@@ -22145,6 +22149,51 @@ select {
 .paginacion .activo:hover a {
   background-color: #a84744;
   color: #fff !important;
+}
+.alerta {
+  display: none;
+  position: relative;
+  padding: 20px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+.alerta h4 {
+  margin-top: 0;
+  color: inherit;
+}
+.alerta > p,
+.alerta > ul {
+  margin-bottom: 0;
+}
+.alerta > p + p {
+  margin-top: 5px;
+}
+.alert-dismissable,
+.alert-dismissible {
+  padding-right: 40px;
+}
+.alert-dismissable .close,
+.alert-dismissible .close {
+  position: absolute;
+  top: -2px;
+  right: 20px;
+  color: inherit;
+  background-color: transparent;
+}
+.alerta-precaucion {
+  background-color: #f5f2db;
+  color: #a4962d;
+  border-color: #a4962d;
+}
+.alerta-accion {
+  background-color: #76a127;
+  color: #fff;
+  border-color: #000000;
+}
+.alerta-error {
+  background-color: #d66152;
+  color: #fff;
+  border-color: #210b08;
 }
 @media (max-width: 767px) {
   form label {

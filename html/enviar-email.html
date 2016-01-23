@@ -75,7 +75,17 @@
 				</div>
 				<div class="fila">
 					<div class="col-md-4 col-md-offset-5 col-sm-4 col-sm-offset-5 col-xs-12">
-						<button type="button" class="btn btn-accion btn-lg btn-bloque">Enviar email</button>
+						<button type="button" class="btn btn-accion btn-lg btn-bloque btn-abrir-alerta">Enviar email</button>
+					</div>
+				</div>
+				<div class="fila">
+					<div class="col-md-12">
+						<div class="margen-inf-sm">
+							<div class="alerta alerta-error alert-dismissible fade in" role="alert">
+							  <button type="button" class="close btn-cerrar-alerta" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							  <strong>Error de enviado!</strong> No hemos podido enviar tu mensaje. Por favor intente nuevamente
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -84,34 +94,14 @@
 	<footer>
 		<p class="centrado xs"><b>Personas</b> es un sistema de registro único (SSO) desarrollado por el <a href="#">.:TIG:.</a> para todos los servicios de la <a href="#">e[ad] Escuela de Arquitectura y Diseño PUCV</a>. </p>
 	</footer>
-	<!-- Modal -->
-	<div class="modal fade helper exito" id="modalExito" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	      <div class="modal-body">
-	        <h2><i class="icn icn-visto icn-lg"></i> La acción se ha realizado satisfactoriamente!</h2>
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-accion" data-dismiss="modal">Ok</button>
-	      </div>
-	    </div>
-	  </div>
-	</div>
 
 	<script>
-	// Abre tab según href anterior
-		$(function(){
-	  		var hash = window.location.hash;
-	  		hash && $('ul.nav a[href="' + hash + '"]').tab('show');
-
-		  $('.nav-tabs a').click(function (e) {
-		    $(this).tab('show');
-		    var scrollmem = $('body').scrollTop();
-		    window.location.hash = this.hash;
-		    $('html,body').scrollTop(scrollmem);
-		  });
-		});
-		$('.tooltip-demo').tooltip({selector: "a[data-toggle=tooltip]"});
+		$('.btn-abrir-alerta').click(function(){
+	        $('.alerta').show()
+	    });
+	    $('.btn-cerrar-alerta').click(function(){
+	        $('.alerta').hide()
+	    }) 
 	</script>
 </body>
 </html>

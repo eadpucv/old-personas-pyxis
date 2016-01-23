@@ -353,6 +353,76 @@ select {
 		}
 	}
 }
+
+// Alertas
+
+.alerta {
+	display: none;
+	position: relative;
+ 	padding: 20px;
+  // margin-bottom: @line-height-computed;
+ 	border: 1px solid transparent;
+ 	border-radius: @radio;
+
+	// Headings for larger alerts
+	h4 {
+	margin-top: 0;
+	// Specified for the h4 to prevent conflicts of changing @headings-color
+	color: inherit;
+	}
+
+	// Provide class for links that match alerts
+	.alert-link {
+
+	}
+
+	// Improve alignment and spacing of inner content
+	> p,
+	> ul {
+	margin-bottom: 0;
+	}
+
+	> p + p {
+	margin-top: 5px;
+	}
+}
+
+// Dismissible alerts
+//
+// Expand the right padding and account for the close button's positioning.
+
+.alert-dismissable, // The misspelled .alert-dismissable was deprecated in 3.2.0.
+.alert-dismissible {
+  padding-right: 40px;
+
+  // Adjust close link position
+  .close {
+    position: absolute;
+    top: -2px;
+    right: 20px;
+    color: inherit;
+    background-color: transparent;
+    // border: none;
+  }
+}
+
+.alerta-precaucion {
+	background-color: @masking;
+	color: darken(@masking, 50%);
+	border-color: darken(@masking, 50%);
+}
+.alerta-accion {
+	background-color: @verde;
+	color: #fff;
+	border-color: darken(@verde, 50%);
+}
+.alerta-error {
+	background-color: @rojo-alerta;
+	color: #fff;
+	border-color: darken(@rojo-alerta, 50%);
+}
+
+
 // --------------------------------------------------
 // diseño de utilidad responsive
 
