@@ -9013,28 +9013,31 @@ form.buscador input[type=submit] {
     top: 0;
   }
 }
+
 ::-webkit-input-placeholder {
-  color: #575851;
-  font-size: .9rem;
-  font-weight: 200;
+    color: @gris-claro;
+    font-style: italic;
+    font-weight: @peso-fino;
 }
-:-moz-placeholder {
-  /* Firefox 18- */
-  color: #575851;
-  font-size: .9rem;
-  font-weight: 200;
+
+:-moz-placeholder { /* Firefox 18- */
+    color: @gris-claro;
+    font-style: italic;
+    font-weight: @peso-fino;
 }
-::-moz-placeholder {
-  /* Firefox 19+ */
-  color: #575851;
-  font-size: .9rem;
-  font-weight: 200;
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: @gris-claro;
+    font-style: italic;
+    font-weight: @peso-fino;
 }
-:-ms-input-placeholder {
-  color: #575851;
-  font-size: .9rem;
-  font-weight: 200;
+
+:-ms-input-placeholder {  
+    color: @gris-claro;
+    font-style: italic;
+    font-weight: @peso-fino;
 }
+
 @media (min-width: 1445px) {
   button,
   button.btn,
