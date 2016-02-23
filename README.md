@@ -3,11 +3,6 @@ http://eadpucv.github.io/personas-pyxis/
 
 [`Personas e[ad]`](http://personas.ead.pucv.cl) es un sistema digital de registro único (Single Sing-on), desarrollado por el `.:TIG:.` Taller de Investigaciones Gráficas de la `e[ad]`, que permite la creación de un usuario único llamado "persona", para el uso de algunos servicios digitales que ofrece la `e[ad] Escuela de Arquitectura y Diseño`
 
-# personas-pyxis
-http://eadpucv.github.io/personas-pyxis/
-
-[`Personas e[ad]`](http://personas.ead.pucv.cl) es un sistema digital de registro único (Single Sing-on), desarrollado por el `.:TIG:.` Taller de Investigaciones Gráficas de la `e[ad]`, que permite la creación de un usuario único llamado "persona", para el uso de algunos servicios digitales que ofrece la `e[ad] Escuela de Arquitectura y Diseño`
-
 ## Compilación de estilos con gruntJS
 
 El repositorio utiliza Pyxis como una dependencia importante, quien a su vez integra Stampa y jQuery. Los estilos custom de este repositorio deben convivir de manera inteligente, paralelamente con las dependencias. Para eso es necesario compilar todos los estilos y así generar una hoja de estilos única. Para llevar acabo esto, se utiliza grunt, herramienta encargada de correr las tareas de forma automática y así permitir un desarrollo mucho más fluido. 
