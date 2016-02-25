@@ -9013,31 +9013,28 @@ form.buscador input[type=submit] {
     top: 0;
   }
 }
-
 ::-webkit-input-placeholder {
-    color: @gris-claro;
-    font-style: italic;
-    font-weight: @peso-fino;
+  color: #575851;
+  font-size: .9rem;
+  font-weight: 200;
 }
-
-:-moz-placeholder { /* Firefox 18- */
-    color: @gris-claro;
-    font-style: italic;
-    font-weight: @peso-fino;
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #575851;
+  font-size: .9rem;
+  font-weight: 200;
 }
-
-::-moz-placeholder {  /* Firefox 19+ */
-    color: @gris-claro;
-    font-style: italic;
-    font-weight: @peso-fino;
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #575851;
+  font-size: .9rem;
+  font-weight: 200;
 }
-
-:-ms-input-placeholder {  
-    color: @gris-claro;
-    font-style: italic;
-    font-weight: @peso-fino;
+:-ms-input-placeholder {
+  color: #575851;
+  font-size: .9rem;
+  font-weight: 200;
 }
-
 @media (min-width: 1445px) {
   button,
   button.btn,
@@ -21773,8 +21770,15 @@ form {
   margin: 0 auto;
   width: 300px;
 }
-.bloque-resultado {
+.bloque-resultad,
+.change-password,
+.change-email {
   display: none;
+}
+.no-data {
+  color: #d66152;
+  font-weight: 700;
+  text-decoration: underline;
 }
 .menu-nav .navbar-toggle {
   display: none;
@@ -21917,6 +21921,10 @@ form {
 .btn-bloque {
   width: 100%;
 }
+input.btn-accion[type="submit"],
+input.btn-alerta[type="submit"] {
+  color: #fff !important;
+}
 button.btn-lg,
 button.btn.btn-lg,
 input.btn-lg[type="submit"],
@@ -21925,45 +21933,81 @@ a.btn.btn-lg {
 }
 button.btn-facebook,
 button.btn-twitter,
-button.btn-google {
+button.btn-google,
+.btn-facebook,
+.btn-twitter,
+.btn-google,
+.btn.btn-facebook,
+.btn.btn-twitter,
+.btn.btn-google {
   margin-top: 0;
   color: #fff;
 }
 button.btn-facebook:hover,
 button.btn-twitter:hover,
-button.btn-google:hover {
+button.btn-google:hover,
+.btn-facebook:hover,
+.btn-twitter:hover,
+.btn-google:hover,
+.btn.btn-facebook:hover,
+.btn.btn-twitter:hover,
+.btn.btn-google:hover {
   color: #fff;
 }
 button.btn-facebook:active,
 button.btn-twitter:active,
-button.btn-google:active {
+button.btn-google:active,
+.btn-facebook:active,
+.btn-twitter:active,
+.btn-google:active,
+.btn.btn-facebook:active,
+.btn.btn-twitter:active,
+.btn.btn-google:active {
   margin: 0 auto 15px auto;
 }
 button.btn-facebook.btn-deshabilitado,
 button.btn-twitter.btn-deshabilitado,
-button.btn-google.btn-deshabilitado {
+button.btn-google.btn-deshabilitado,
+.btn-facebook.btn-deshabilitado,
+.btn-twitter.btn-deshabilitado,
+.btn-google.btn-deshabilitado,
+.btn.btn-facebook.btn-deshabilitado,
+.btn.btn-twitter.btn-deshabilitado,
+.btn.btn-google.btn-deshabilitado {
   background-color: #999;
 }
 button.btn-deshabilitado,
 a.btn-deshabilitado {
   background-color: #999;
 }
-button.btn-facebook {
+button.btn-facebook,
+.btn-facebook,
+.btn.btn-facebook {
   background-color: #3b5998;
 }
-button.btn-facebook:hover {
+button.btn-facebook:hover,
+.btn-facebook:hover,
+.btn.btn-facebook:hover {
   background-color: #2d4373;
 }
-button.btn-twitter {
+button.btn-twitter,
+.btn-twitter,
+.btn.btn-twitter {
   background-color: #00aced;
 }
-button.btn-twitter:hover {
+button.btn-twitter:hover,
+.btn-twitter:hover,
+.btn.btn-twitter:hover {
   background-color: #0087ba;
 }
-button.btn-google {
+button.btn-google,
+.btn-google,
+.btn.btn-google {
   background-color: #dd4b39;
 }
-button.btn-google:hover {
+button.btn-google:hover,
+.btn-google:hover,
+.btn.btn-google:hover {
   background-color: #c23321;
 }
 .btn-accion-hover:hover {
