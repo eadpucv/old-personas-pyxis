@@ -21834,6 +21834,10 @@ form {
 .btn-bloque {
   width: 100%;
 }
+input.btn-accion[type="submit"],
+input.btn-alerta[type="submit"] {
+  color: #fff !important;
+}
 button.btn-lg,
 button.btn.btn-lg,
 input.btn-lg[type="submit"],
