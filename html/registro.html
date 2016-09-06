@@ -25,9 +25,9 @@
 		<div class="modulo-cuerpo">
 			<div class="contenedor-modulo">
 				<div class="fila">
-					<div class="tab-content margen-sup">
-						<div class="tab-pane fade in active" id="registro-1">
-							<form>
+					<form>
+						<div class="tab-content margen-sup" id="tabsRegistro">
+							<div class="tab-pane fade in active">
 								<div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12">
 				            		<h3 class="fino sans rojo"><i class="icn icn-perfil nav-icn"></i> Registro de nuevo usuario</h3>
 				            	</div>
@@ -38,7 +38,7 @@
 										<label for="username">Nombre de usuario</label>
 										<div class="grupo-inputs">
 									        <div class="input"><i class="icn icn-md icn-usuario"></i></div>
-									        <input type="text" class="control" id="username" />		
+									        <input type="text" class="control" id="username" placeholder="juanperez"/>		
 									    </div>
 									    <span class="xs margen-sup-xs">Elije un nombre que puedas recordar con facilidad. Se recomienda no utilizar espacios ni mayúsculas ya que el sistema los distingue y después son fáciles de olvidar.</span>
 									</div>
@@ -46,32 +46,33 @@
 										<label for="names">Nombres</label>
 										<div class="grupo-inputs">		
 									        <div class="input"><i class="icn icn-md icn-perfil"></i></div>
-									        <input type="text" class="control" id="names" />	
+									        <input type="text" class="control" id="names" placeholder="Juan José"/>	
 									    </div>
 									</div>
 									<div class="margen-inf-sm">
 										<label for="lastnames">Apellidos</label>
 										<div class="grupo-inputs">		
 									        <div class="input"><i class="icn icn-md icn-perfil"></i></div>
-									        <input type="text" class="control" id="lastnames" />	
+									        <input type="text" class="control" id="lastnames" placeholder="Pérez López"/>	
 									    </div>
 									</div>
 									<div class="margen-inf-sm">
 										<label for="rut">Rut</label>
 										<div class="grupo-inputs">		
 									        <div class="input"><i class="icn icn-md icn-acto"></i></div>
-									        <input type="text" class="control" id="rut" />	
+									        <input type="text" class="control" id="rut" placeholder="12.345.678-9"/>	
 									    </div>
 									</div>
 									<div class="margen-inf-sm">
 										<label for="usertype">Relación con la e[ad]</label>
 										<div class="grupo-inputs">
 									        <div class="input"><i class="icn icn-md icn-caronabajo"></i></div>
-									        <select name="usertype">
+									        <select name="usertype" placeholder="selecciona tu carrera">
 												<option></option>
 										    	<option>Alumno(a)</option>
 										    	<option>Profesor(a)</option>
 										    	<option>Ex-alumno(a)</option>
+										    	<option>Ex-profesor(a)</option>
 										    	<option>Amigo(a)</option>
 										    	<option>Otro(a)</option>
 										    </select>
@@ -92,13 +93,11 @@
 									    </div>	
 									</div>
 									<div class="margen-inf-sm">
-										<a class="btn btn-accion btn-lg btn-bloque" href="#registro-2" role="tab" data-toggle="tab">Siguiente</a>
+										<a class="btn btn-accion btn-lg btn-bloque btn-registro1" href="#registro-2">Siguiente</a>
 									</div>
 								</div>
-							</form>
-						</div>
-						<div class="tab-pane fade" id="registro-2">
-							<form>
+							</div>
+							<div class="tab-pane fade" id="registro-2">
 								<div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12">
 									<h5 class="fino sans pizarra">Contacto y seguridad</h5>
 									<hr>
@@ -139,18 +138,18 @@
 												<input type="checkbox"> <span class="xs"><a href="http://personas.ead.pucv.cl/others/terminos" target="_blank">Acepto los términos y condiciones e[ad]</a></span>
 											</label>
 										</div>
-										<a class="btn btn-accion btn-lg btn-bloque" href="#registro-3" role="tab" data-toggle="tab">Crear nuevo usuario</a>
+										<a class="btn btn-accion btn-lg btn-bloque btn-registro2" href="#registro-3">Crear nuevo usuario</a>
 									</div>
 								</div>
-							</form>
-						</div>
-						<div class="tab-pane fade" id="registro-3">
-							<div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12">
-								<h4 class="fino sans centrado margen-sup-lg margen-inf-lg">Tu cuenta ha sido registrada con éxito. Tu nombre de usuario es <a href="#">juanito_perez</a>, revisa tu email (juanito_prz@hotmail.com) para finalizar el proceso de registro.</h4>
-								<a class="btn btn-accion btn-lg btn-bloque" href="ingresar.html">Volver al login</a>
+							</div>
+							<div class="tab-pane fade" id="registro-3">
+								<div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12">
+									<h4 class="fino sans centrado margen-sup-lg margen-inf-lg">Tu cuenta ha sido registrada con éxito. Tu nombre de usuario es <a href="#">juanito_perez</a>, revisa tu email (juanito_prz@hotmail.com) para finalizar el proceso de registro.</h4>
+									<a class="btn btn-accion btn-lg btn-bloque" href="ingresar.html">Volver al login</a>
+								</div>
 							</div>
 						</div>
-					</div>
+					</form>
 				</div>
 			</div>
 		</div>
@@ -158,19 +157,27 @@
 	<footer>
 		<p class="centrado xs"><b>Personas</b> es un sistema de registro único (SSO) desarrollado por el <a href="#">.:TIG:.</a> para todos los servicios de la <a href="#">e[ad] Escuela de Arquitectura y Diseño PUCV</a>. </p>
 	</footer>
-	<!-- Modal -->
-	<div class="modal fade helper exito" id="modalExito" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	      <div class="modal-body">
-	      	<i class="icn icn-visto icn-lg"></i> 
-	        <h3 class="sans ">El usuario (username) ha sido creado exitosamente. Te hemos enviado un email con tu información.</h3>
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-accion btn-lg" data-dismiss="modal">Ok, entiendo</button>
-	      </div>
-	    </div>
-	  </div>
-	</div>
 </body>
+<script>
+	$(document).ready(function(){
+
+	    $('.btn-registro1').click(function () {
+		    if (confirm("Verificando...") == true) {
+		        alert("Verificación OK!");
+		        $('#tabsRegistro a[href = "#registro-2"]').tab('show');
+		    } else {
+		        alert("Verificación errónea!");
+		    }
+		});
+
+		$('.btn-registro2').click(function () {
+		    if (confirm("Registrando...") == true) {
+		        alert("Registro OK!");
+		        $('#tabsRegistro a[href = "#registro-3"]').tab('show');
+		    } else {
+		        alert("Registro errónea!");
+		    }
+		})
+	});
+</script>
 </html>
